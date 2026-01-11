@@ -1,0 +1,22 @@
+{
+  "name": "xinling-companion",
+  "private": true,
+  "version": "0.0.1",
+  "description": "XinLing Companion (心灵伙伴) - WeChat Mini Program (uni-app + Vue 3) + WXCloud",
+  "scripts": {
+    "dev:mp-weixin": "uni -p mp-weixin",
+    "build:mp-weixin": "uni build -p mp-weixin",
+    "docs": "echo \"Docs live in ./docs\""
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "3.0.0-alpha-5000020260104004",
+    "@dcloudio/uni-mp-weixin": "3.0.0-alpha-5000020260104004",
+    "vue": "^3.5.0",
+    "vue-i18n": "^9.14.5"
+  },
+  "devDependencies": {
+    "@dcloudio/vite-plugin-uni": "3.0.0-alpha-5000020260104004",
+    "@vitejs/plugin-vue": "^5.0.0",
+    "vite": "^5.0.0"
+  }
+}

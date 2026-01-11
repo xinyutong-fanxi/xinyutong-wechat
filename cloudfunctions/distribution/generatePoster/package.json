@@ -1,0 +1,7 @@
+{
+  "name": "generatePoster",
+  "version": "1.0.0",
+  "description": "Generate promotional poster with referral code QR code",
+  "main": "index.js",
+  "dependencies": {}
+}

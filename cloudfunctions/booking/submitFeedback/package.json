@@ -1,0 +1,9 @@
+{
+  "name": "booking-submitFeedback",
+  "version": "1.0.0",
+  "description": "Submit parent feedback for completed counseling session",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "~2.6.3"
+  }
+}

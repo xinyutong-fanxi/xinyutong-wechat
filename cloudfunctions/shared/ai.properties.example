@@ -1,0 +1,52 @@
+# AI provider configuration (example)
+#
+# Copy this file to `cloudfunctions/shared/ai.properties` and edit values.
+# Env vars still override these values (useful for CI / production).
+#
+# Supported:
+# - AI_PROVIDER=ollama | deepseek | openai_compat
+# - AI_BASE_URL=<openai-compatible base url>
+# - AI_MODEL=<model id>
+# - AI_API_KEY=<api key>   (avoid committing real keys)
+#
+# --- Local Ollama (recommended for local dev) ---
+# NOTE: This only works when the function runs on your machine (e.g. DevTools local debug).
+# It will NOT work from Tencent Cloud (cloud runtime cannot reach your laptop’s 127.0.0.1).
+AI_PROVIDER=ollama
+AI_BASE_URL=http://127.0.0.1:11434/v1
+# Set this to a model you actually have pulled in Ollama, e.g.:
+# - llama3.1
+# - qwen2.5
+# - deepseek-r1
+AI_MODEL=llama3.1
+# AI_API_KEY=
+#
+# --- DeepSeek cloud (recommended for realism / production) ---
+# AI_PROVIDER=deepseek
+# AI_BASE_URL=https://api.deepseek.com
+# AI_MODEL=deepseek-chat
+# AI_API_KEY=YOUR_DEEPSEEK_API_KEY
+
+# AI provider configuration (example)
+#
+# Copy this file to `cloudfunctions/shared/ai.properties` and edit values.
+# Env vars still override these values (useful for CI / production).
+#
+# Supported:
+# - AI_PROVIDER=ollama | deepseek | openai_compat
+# - AI_BASE_URL=<openai-compatible base url>
+# - AI_MODEL=<model id>
+# - AI_API_KEY=<api key>   (avoid committing real keys)
+#
+# --- Local Ollama (recommended for local dev) ---
+AI_PROVIDER=ollama
+AI_BASE_URL=http://127.0.0.1:11434/v1
+AI_MODEL=llama3.1
+# AI_API_KEY=
+#
+# --- DeepSeek cloud (recommended for realism) ---
+# AI_PROVIDER=deepseek
+# AI_BASE_URL=https://api.deepseek.com
+# AI_MODEL=deepseek-chat
+# AI_API_KEY=YOUR_DEEPSEEK_API_KEY
+

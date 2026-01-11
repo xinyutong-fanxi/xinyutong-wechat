@@ -1,0 +1,7 @@
+{
+  "name": "requestWithdrawal",
+  "version": "1.0.0",
+  "description": "Request withdrawal for teacher or distributor earnings",
+  "main": "index.js",
+  "dependencies": {}
+}

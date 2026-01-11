@@ -1,0 +1,7 @@
+{
+  "name": "viewDashboard",
+  "version": "1.0.0",
+  "description": "Get aggregated stats for admin dashboard",
+  "main": "index.js",
+  "dependencies": {}
+}

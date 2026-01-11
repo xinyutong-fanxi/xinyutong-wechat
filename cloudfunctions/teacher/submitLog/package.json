@@ -1,0 +1,7 @@
+{
+  "name": "submitLog",
+  "version": "1.0.0",
+  "description": "Submit counseling session log",
+  "main": "index.js",
+  "dependencies": {}
+}

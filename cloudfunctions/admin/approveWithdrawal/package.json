@@ -1,0 +1,7 @@
+{
+  "name": "approveWithdrawal",
+  "version": "1.0.0",
+  "description": "Approve or reject withdrawal and process WeChat Pay transfer",
+  "main": "index.js",
+  "dependencies": {}
+}

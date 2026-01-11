@@ -1,0 +1,7 @@
+{
+  "name": "createPayment",
+  "version": "1.0.0",
+  "description": "Create WeChat Pay payment",
+  "main": "index.js",
+  "dependencies": {}
+}

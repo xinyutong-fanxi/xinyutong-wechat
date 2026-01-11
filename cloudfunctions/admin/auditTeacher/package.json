@@ -1,0 +1,7 @@
+{
+  "name": "auditTeacher",
+  "version": "1.0.0",
+  "description": "Approve or reject teacher application",
+  "main": "index.js",
+  "dependencies": {}
+}

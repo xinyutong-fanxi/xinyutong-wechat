@@ -1,0 +1,318 @@
+{
+  "common": {
+    "confirm": "确认",
+    "cancel": "取消",
+    "save": "保存",
+    "delete": "删除",
+    "edit": "编辑",
+    "add": "添加",
+    "submit": "提交",
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "back": "返回",
+    "next": "下一步",
+    "previous": "上一步",
+    "search": "搜索",
+    "filter": "筛选",
+    "reset": "重置",
+    "yes": "是",
+    "no": "否",
+    "ok": "好的",
+    "notSet": "未设置",
+    "notBound": "未绑定"
+  },
+  "app": {
+    "name": "心语通",
+    "tagline": "心理教育服务平台",
+    "companion": "心灵伙伴"
+  },
+  "moods": {
+    "happy": "开心",
+    "ok": "还好",
+    "nervous": "紧张",
+    "sad": "难过",
+    "angry": "生气",
+    "tired": "疲惫"
+  },
+  "index": {
+    "title": "心灵伙伴",
+    "subtitle": "今天感觉怎么样？先选一个小表情，再慢慢聊～",
+    "ventButton": "倾诉",
+    "inputPlaceholder": "想聊什么都可以…",
+    "sendButton": "发送",
+    "voiceInputDeveloping": "语音输入开发中",
+    "errorMessage": "刚刚我有点卡住了…要不你再发一次？我会认真听的。",
+    "defaultMessage": "我在这儿。我们慢慢来，你愿意多说一点吗？",
+    "greeting": "嗨，我是星辰。听起来你可能有点累/压力大？我们慢慢聊～",
+    "bookCounselor": "预约咨询师",
+    "bookingRedirectTitle": "预约专业咨询",
+    "bookingRedirectMessage": "预约专业心理咨询师需要家长账号。是否跳转到家长端？",
+    "bookingRedirectConfirm": "前往预约"
+  },
+  "onboarding": {
+    "title": "开始使用",
+    "subtitle": "需要监护人同意后才能开始聊天",
+    "chips": {
+      "gentleChat": "温柔聊天",
+      "noTranscript": "不展示原文",
+      "safe": "更安心"
+    },
+    "childInfo": "孩子基本信息",
+    "nickname": "昵称",
+    "nicknamePlaceholder": "怎么称呼你？",
+    "age": "年龄",
+    "agePlaceholder": "8-16",
+    "grade": "年级（可选）",
+    "gradePlaceholder": "如：初一",
+    "language": "你更喜欢用什么语言？",
+    "selectLanguage": "选择语言",
+    "interests": "兴趣（可选）",
+    "interestsPlaceholder": "如：篮球, 动漫, 画画",
+    "goals": "你希望我帮你什么？（可选）",
+    "goalsPlaceholder": "如：缓解考试紧张/人际沟通",
+    "sensitivities": "有不想聊的敏感点吗？（可选）",
+    "sensitivitiesPlaceholder": "如：不提某个人/某些话题",
+    "guardianInfo": "监护人信息（用于同意）",
+    "guardianPhone": "监护人手机号（可选）",
+    "guardianPhonePlaceholder": "手机号（用于必要时联系，不会展示聊天原文）",
+    "relationship": "关系",
+    "selectRelationship": "选择关系",
+    "relationships": {
+      "mother": "妈妈",
+      "father": "爸爸",
+      "guardian": "监护人",
+      "other": "其他"
+    },
+    "consentHint": "我们需要监护人确认同意使用。建议直接通过微信把同意码转发给监护人。本产品的家长端只看到趋势洞察与风险提醒，不会看到聊天原文。",
+    "generateCode": "生成同意码",
+    "skipDev": "（仅本地）直接进入",
+    "validation": {
+      "nicknameRequired": "请填写昵称",
+      "ageRequired": "请填写合理年龄",
+      "generateFailed": "生成失败，请重试"
+    }
+  },
+  "parent": {
+    "home": {
+      "title": "心语通",
+      "subtitle": "心理教育服务平台",
+      "findTeacher": "找老师",
+      "myBookings": "我的预约",
+      "studentManagement": "学生管理",
+      "distributionCenter": "推广中心",
+      "upcomingBookings": "即将到来的预约",
+      "noBookings": "暂无预约"
+    },
+    "settings": {
+      "title": "设置",
+      "studentManagement": "学生管理",
+      "distributionCenter": "推广中心",
+      "paymentHistory": "支付记录",
+      "aboutUs": "关于我们",
+      "helpCenter": "帮助中心",
+      "logout": "退出登录",
+      "confirmLogout": "确认退出",
+      "logoutMessage": "确定要退出登录吗？",
+      "aboutTitle": "关于我们",
+      "aboutContent": "心语通 - 心理教育服务平台",
+      "helpDeveloping": "帮助中心开发中"
+    },
+    "students": {
+      "title": "学生管理",
+      "addStudent": "添加学生",
+      "editStudent": "编辑学生",
+      "noStudents": "暂无学生"
+    },
+    "teachers": {
+      "title": "找老师",
+      "noTeachers": "暂无老师",
+      "bookAppointment": "预约"
+    },
+    "bookings": {
+      "title": "我的预约",
+      "upcoming": "即将到来",
+      "past": "已过去",
+      "noBookings": "暂无预约",
+      "status": {
+        "pending": "待确认",
+        "confirmed": "已确认",
+        "completed": "已完成",
+        "cancelled": "已取消"
+      }
+    },
+    "distribution": {
+      "title": "推广中心",
+      "apply": "申请成为推广员",
+      "poster": "生成推广海报",
+      "stats": "推广数据",
+      "withdraw": "提现申请"
+    }
+  },
+  "teacher": {
+    "home": {
+      "title": "教师工作台",
+      "upcomingSessions": "即将开始的课程",
+      "earnings": "收益统计"
+    },
+    "settings": {
+      "title": "设置",
+      "profile": "个人资料",
+      "schedule": "时间管理",
+      "earnings": "收益统计",
+      "distribution": "推广工具",
+      "aboutUs": "关于我们",
+      "helpCenter": "帮助中心",
+      "logout": "退出登录",
+      "confirmLogout": "确认退出",
+      "logoutMessage": "确定要退出登录吗？"
+    },
+    "profile": {
+      "title": "个人资料",
+      "status": {
+        "pending": "审核中",
+        "approved": "已通过",
+        "rejected": "已拒绝",
+        "suspended": "已暂停"
+      },
+      "serviceSettings": "服务设置",
+      "serviceMode": "服务模式",
+      "online": "线上咨询",
+      "offline": "线下咨询",
+      "pricePerHour": "收费标准 (元/小时)",
+      "pricePlaceholder": "请输入价格",
+      "save": "保存修改",
+      "saving": "保存中..."
+    },
+    "bookings": {
+      "title": "预约管理",
+      "submitLog": "提交课程记录"
+    }
+  },
+  "admin": {
+    "home": {
+      "title": "管理后台"
+    },
+    "settings": {
+      "title": "系统设置",
+      "systemConfig": "系统配置",
+      "platformRates": "平台费率设置",
+      "dataExport": "数据导出",
+      "aboutSystem": "关于系统",
+      "aboutContent": "心语通 - 心理教育服务平台\n管理后台 v1.0",
+      "logout": "退出登录",
+      "confirmLogout": "确认退出",
+      "logoutMessage": "确定要退出登录吗？",
+      "systemConfigDeveloping": "系统配置功能开发中",
+      "ratesDeveloping": "费率设置功能开发中",
+      "exportDeveloping": "数据导出功能开发中"
+    },
+    "teachers": {
+      "title": "教师管理",
+      "audit": "审核教师"
+    },
+    "orders": {
+      "title": "订单管理"
+    },
+    "distribution": {
+      "title": "推广管理"
+    },
+    "withdrawals": {
+      "title": "提现审核",
+      "review": "审核提现申请"
+    }
+  },
+  "student": {
+    "bookings": {
+      "title": "我的预约"
+    },
+    "records": {
+      "title": "咨询记录"
+    }
+  },
+  "booking": {
+    "create": {
+      "title": "创建预约",
+      "selectTeacher": "选择老师",
+      "selectStudent": "选择学生",
+      "selectTime": "选择时间",
+      "confirmDetails": "确认信息"
+    },
+    "payment": {
+      "title": "支付",
+      "amount": "金额",
+      "method": "支付方式",
+      "payNow": "立即支付"
+    },
+    "detail": {
+      "title": "预约详情"
+    }
+  },
+  "payment": {
+    "methods": {
+      "wechatPay": "微信支付"
+    },
+    "status": {
+      "unpaid": "未支付",
+      "paid": "已支付",
+      "refunded": "已退款"
+    }
+  },
+  "language": {
+    "title": "语言设置",
+    "chinese": "中文",
+    "english": "English",
+    "changeLanguage": "切换语言",
+    "languageChanged": "语言已切换"
+  },
+  "errors": {
+    "generic": "出错了，请稍后重试",
+    "network": "网络连接失败",
+    "unauthorized": "未授权，请重新登录",
+    "notFound": "未找到",
+    "serverError": "服务器错误"
+  },
+  "dashboard": {
+    "title": "家长守护",
+    "subtitle": "每周洞察（不含聊天原文）",
+    "guardianConsent": "监护同意 / 绑定孩子",
+    "pairingCodeLabel": "请输入孩子端显示的 6 位同意码：",
+    "pairingCodePlaceholder": "例如：123456",
+    "relationshipLabel": "关系（可选）：",
+    "relationshipPlaceholder": "如：妈妈/爸爸/监护人",
+    "consentCheckbox": "我已阅读并同意孩子使用本产品",
+    "confirmConsent": "确认同意",
+    "stressTrend": "本周压力趋势",
+    "chartPlaceholder": "（占位）7 天压力曲线图",
+    "teacherMatch": "家教/老师匹配度",
+    "fastSpeech": "语速快",
+    "loudVoice": "声音大",
+    "homeworkPressure": "作业压力",
+    "matchSuggestion": "（占位）建议：尝试更慢节奏的讲解方式，先对齐孩子的理解速度。",
+    "riskAlerts": "风险提醒",
+    "riskAlertsDesc": "（占位）若出现红线信号，将在此显示事件时间与类别（不含原文）。",
+    "enableNotifications": "开启通知",
+    "verifyIdentity": "实名/监护验证（占位）",
+    "fillPairingCode": "请填写同意码",
+    "checkConsent": "请勾选同意",
+    "consentSuccess": "已同意",
+    "consentFailed": "同意失败，请重试",
+    "notificationsDeveloping": "通知订阅开发中",
+    "verifyDeveloping": "验证流程开发中"
+  },
+  "waitConsent": {
+    "title": "等待监护人同意",
+    "subtitle": "把同意码微信转发给监护人，一键打开并完成同意",
+    "pairingCode": "同意码",
+    "copyCode": "复制",
+    "copied": "已复制",
+    "description": "监护人同意后，你就可以开始聊天。建议点击下方按钮，通过微信转发给监护人打开并完成同意。家长端只会看到趋势洞察与风险提醒，不会看到聊天原文。",
+    "iHaveConsented": "我已经同意了",
+    "shareToGuardian": "微信转发给监护人",
+    "shareTitle": "请帮我完成监护人同意（同意码：{code}）",
+    "shareTitleNoCode": "请帮我完成监护人同意",
+    "goToParent": "去家长守护",
+    "notConsentedYet": "还没有完成同意哦",
+    "checkFailed": "检查失败，请重试"
+  }
+}

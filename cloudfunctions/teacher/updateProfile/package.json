@@ -1,0 +1,7 @@
+{
+  "name": "updateProfile",
+  "version": "1.0.0",
+  "description": "Update teacher profile",
+  "main": "index.js",
+  "dependencies": {}
+}

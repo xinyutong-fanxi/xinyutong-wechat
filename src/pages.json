@@ -1,0 +1,348 @@
+{
+  "pages": [
+    {
+      "path": "pages/onboarding/register",
+      "style": {
+        "navigationBarTitleText": "开始使用",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/onboarding/waitConsent",
+      "style": {
+        "navigationBarTitleText": "家长同意",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white",
+        "enableShareAppMessage": true
+      }
+    },
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "心灵伙伴",
+        "navigationStyle": "default",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/parent/home",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/parent/dashboard",
+      "style": {
+        "navigationBarTitleText": "家长守护",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white",
+        "enableShareAppMessage": true
+      }
+    },
+    {
+      "path": "pages/parent/students",
+      "style": {
+        "navigationBarTitleText": "学生管理",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/parent/students/create",
+      "style": {
+        "navigationBarTitleText": "添加学生",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/parent/students/edit",
+      "style": {
+        "navigationBarTitleText": "编辑学生",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/parent/teachers",
+      "style": {
+        "navigationBarTitleText": "老师/咨询师",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/parent/teachers/detail",
+      "style": {
+        "navigationBarTitleText": "老师详情",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/parent/bookings",
+      "style": {
+        "navigationBarTitleText": "我的预约",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/parent/bookings/detail",
+      "style": {
+        "navigationBarTitleText": "预约详情",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/parent/bookings/create",
+      "style": {
+        "navigationBarTitleText": "预约服务",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/parent/bookings/payment",
+      "style": {
+        "navigationBarTitleText": "支付",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/parent/bookings/log",
+      "style": {
+        "navigationBarTitleText": "评价服务",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/parent/distribution",
+      "style": {
+        "navigationBarTitleText": "推广中心",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/parent/distribution/apply",
+      "style": {
+        "navigationBarTitleText": "申请成为推广员",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/parent/distribution/poster",
+      "style": {
+        "navigationBarTitleText": "推广海报",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/parent/distribution/stats",
+      "style": {
+        "navigationBarTitleText": "推广数据",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/parent/distribution/withdraw",
+      "style": {
+        "navigationBarTitleText": "申请提现",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/parent/payments",
+      "style": {
+        "navigationBarTitleText": "支付记录",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/parent/settings",
+      "style": {
+        "navigationBarTitleText": "设置",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/teacher/home",
+      "style": {
+        "navigationBarTitleText": "工作台",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/teacher/profile",
+      "style": {
+        "navigationBarTitleText": "个人资料",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/teacher/schedule",
+      "style": {
+        "navigationBarTitleText": "时间管理",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/teacher/bookings",
+      "style": {
+        "navigationBarTitleText": "预约管理",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/teacher/bookings/detail",
+      "style": {
+        "navigationBarTitleText": "预约详情",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/teacher/bookings/log",
+      "style": {
+        "navigationBarTitleText": "提交咨询记录",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/teacher/earnings",
+      "style": {
+        "navigationBarTitleText": "收益统计",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/teacher/distribution",
+      "style": {
+        "navigationBarTitleText": "推广工具",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/teacher/withdraw",
+      "style": {
+        "navigationBarTitleText": "申请提现",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/teacher/settings",
+      "style": {
+        "navigationBarTitleText": "设置",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/student/bookings",
+      "style": {
+        "navigationBarTitleText": "我的预约",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/student/records",
+      "style": {
+        "navigationBarTitleText": "咨询记录",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/admin/home",
+      "style": {
+        "navigationBarTitleText": "管理后台",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/admin/teachers",
+      "style": {
+        "navigationBarTitleText": "老师管理",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/admin/teachers/audit",
+      "style": {
+        "navigationBarTitleText": "审核老师",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/admin/orders",
+      "style": {
+        "navigationBarTitleText": "订单管理",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/admin/distribution",
+      "style": {
+        "navigationBarTitleText": "推广配置",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/admin/withdrawals",
+      "style": {
+        "navigationBarTitleText": "提现审核",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/admin/withdrawals/review",
+      "style": {
+        "navigationBarTitleText": "审核提现",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/admin/settings",
+      "style": {
+        "navigationBarTitleText": "系统设置",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTextStyle": "white"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarBackgroundColor": "#323232",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#F2F2F2"
+  }
+}

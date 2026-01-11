@@ -1,0 +1,10 @@
+{
+  "desc": "WeChat sitemap (MVP)",
+  "rules": [
+    {
+      "action": "allow",
+      "page": "*"
+    }
+  ]
+}
+

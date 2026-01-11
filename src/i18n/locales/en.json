@@ -1,0 +1,318 @@
+{
+  "common": {
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "submit": "Submit",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "filter": "Filter",
+    "reset": "Reset",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK",
+    "notSet": "Not set",
+    "notBound": "Not bound"
+  },
+  "app": {
+    "name": "Xinyutong",
+    "tagline": "Psychological Education Service Platform",
+    "companion": "Heart Companion"
+  },
+  "moods": {
+    "happy": "Happy",
+    "ok": "OK",
+    "nervous": "Nervous",
+    "sad": "Sad",
+    "angry": "Angry",
+    "tired": "Tired"
+  },
+  "index": {
+    "title": "Heart Companion",
+    "subtitle": "How are you feeling today? Pick an emoji and let's chat～",
+    "ventButton": "Vent",
+    "inputPlaceholder": "What would you like to talk about?",
+    "sendButton": "Send",
+    "voiceInputDeveloping": "Voice input in development",
+    "errorMessage": "I got stuck there... Could you send it again? I'm listening.",
+    "defaultMessage": "I'm here. Let's take it slow, would you like to share a bit more?",
+    "greeting": "Hi, I'm Star. It sounds like you might be a bit tired/stressed? Let's chat slowly～",
+    "bookCounselor": "Book Counselor",
+    "bookingRedirectTitle": "Book Professional Counseling",
+    "bookingRedirectMessage": "Booking a professional counselor requires a parent account. Would you like to go to the parent interface?",
+    "bookingRedirectConfirm": "Go to Booking"
+  },
+  "onboarding": {
+    "title": "Get Started",
+    "subtitle": "Guardian consent is required before you can start chatting",
+    "chips": {
+      "gentleChat": "Gentle Chat",
+      "noTranscript": "No Transcripts",
+      "safe": "Safer"
+    },
+    "childInfo": "Child Basic Information",
+    "nickname": "Nickname",
+    "nicknamePlaceholder": "What should I call you?",
+    "age": "Age",
+    "agePlaceholder": "8-16",
+    "grade": "Grade (Optional)",
+    "gradePlaceholder": "e.g.: Grade 7",
+    "language": "What language do you prefer?",
+    "selectLanguage": "Select Language",
+    "interests": "Interests (Optional)",
+    "interestsPlaceholder": "e.g.: Basketball, Anime, Drawing",
+    "goals": "What would you like me to help you with? (Optional)",
+    "goalsPlaceholder": "e.g.: Relieve exam anxiety/Interpersonal communication",
+    "sensitivities": "Are there any sensitive topics you'd prefer not to discuss? (Optional)",
+    "sensitivitiesPlaceholder": "e.g.: Don't mention certain person/topic",
+    "guardianInfo": "Guardian Information (for consent)",
+    "guardianPhone": "Guardian Phone Number (Optional)",
+    "guardianPhonePlaceholder": "Phone number (for emergency contact, chat transcripts will not be shown)",
+    "relationship": "Relationship",
+    "selectRelationship": "Select Relationship",
+    "relationships": {
+      "mother": "Mother",
+      "father": "Father",
+      "guardian": "Guardian",
+      "other": "Other"
+    },
+    "consentHint": "We need guardian confirmation and consent. We recommend forwarding the consent code directly to the guardian via WeChat. The parent dashboard only shows trend insights and risk alerts, and will not display chat transcripts.",
+    "generateCode": "Generate Consent Code",
+    "skipDev": "(Local Only) Enter Directly",
+    "validation": {
+      "nicknameRequired": "Please enter a nickname",
+      "ageRequired": "Please enter a valid age",
+      "generateFailed": "Generation failed, please try again"
+    }
+  },
+  "parent": {
+    "home": {
+      "title": "Xinyutong",
+      "subtitle": "Psychological Education Service Platform",
+      "findTeacher": "Find Teacher",
+      "myBookings": "My Bookings",
+      "studentManagement": "Student Management",
+      "distributionCenter": "Distribution Center",
+      "upcomingBookings": "Upcoming Bookings",
+      "noBookings": "No bookings"
+    },
+    "settings": {
+      "title": "Settings",
+      "studentManagement": "Student Management",
+      "distributionCenter": "Distribution Center",
+      "paymentHistory": "Payment History",
+      "aboutUs": "About Us",
+      "helpCenter": "Help Center",
+      "logout": "Log Out",
+      "confirmLogout": "Confirm Logout",
+      "logoutMessage": "Are you sure you want to log out?",
+      "aboutTitle": "About Us",
+      "aboutContent": "Xinyutong - Psychological Education Service Platform",
+      "helpDeveloping": "Help center in development"
+    },
+    "students": {
+      "title": "Student Management",
+      "addStudent": "Add Student",
+      "editStudent": "Edit Student",
+      "noStudents": "No students"
+    },
+    "teachers": {
+      "title": "Find Teacher",
+      "noTeachers": "No teachers available",
+      "bookAppointment": "Book Appointment"
+    },
+    "bookings": {
+      "title": "My Bookings",
+      "upcoming": "Upcoming",
+      "past": "Past",
+      "noBookings": "No bookings",
+      "status": {
+        "pending": "Pending",
+        "confirmed": "Confirmed",
+        "completed": "Completed",
+        "cancelled": "Cancelled"
+      }
+    },
+    "distribution": {
+      "title": "Distribution Center",
+      "apply": "Apply as Distributor",
+      "poster": "Generate Poster",
+      "stats": "Distribution Stats",
+      "withdraw": "Withdrawal Request"
+    }
+  },
+  "teacher": {
+    "home": {
+      "title": "Teacher Dashboard",
+      "upcomingSessions": "Upcoming Sessions",
+      "earnings": "Earnings"
+    },
+    "settings": {
+      "title": "Settings",
+      "profile": "Profile",
+      "schedule": "Schedule Management",
+      "earnings": "Earnings Statistics",
+      "distribution": "Distribution Tools",
+      "aboutUs": "About Us",
+      "helpCenter": "Help Center",
+      "logout": "Log Out",
+      "confirmLogout": "Confirm Logout",
+      "logoutMessage": "Are you sure you want to log out?"
+    },
+    "profile": {
+      "title": "Profile",
+      "status": {
+        "pending": "Under Review",
+        "approved": "Approved",
+        "rejected": "Rejected",
+        "suspended": "Suspended"
+      },
+      "serviceSettings": "Service Settings",
+      "serviceMode": "Service Mode",
+      "online": "Online Consultation",
+      "offline": "Offline Consultation",
+      "pricePerHour": "Price (Yuan/Hour)",
+      "pricePlaceholder": "Enter price",
+      "save": "Save Changes",
+      "saving": "Saving..."
+    },
+    "bookings": {
+      "title": "Booking Management",
+      "submitLog": "Submit Session Log"
+    }
+  },
+  "admin": {
+    "home": {
+      "title": "Admin Dashboard"
+    },
+    "settings": {
+      "title": "System Settings",
+      "systemConfig": "System Configuration",
+      "platformRates": "Platform Fee Rates",
+      "dataExport": "Data Export",
+      "aboutSystem": "About System",
+      "aboutContent": "Xinyutong - Psychological Education Service Platform\nAdmin Backend v1.0",
+      "logout": "Log Out",
+      "confirmLogout": "Confirm Logout",
+      "logoutMessage": "Are you sure you want to log out?",
+      "systemConfigDeveloping": "System configuration in development",
+      "ratesDeveloping": "Fee rate settings in development",
+      "exportDeveloping": "Data export in development"
+    },
+    "teachers": {
+      "title": "Teacher Management",
+      "audit": "Audit Teacher"
+    },
+    "orders": {
+      "title": "Order Management"
+    },
+    "distribution": {
+      "title": "Distribution Management"
+    },
+    "withdrawals": {
+      "title": "Withdrawal Review",
+      "review": "Review Withdrawal Request"
+    }
+  },
+  "student": {
+    "bookings": {
+      "title": "My Bookings"
+    },
+    "records": {
+      "title": "Counseling Records"
+    }
+  },
+  "booking": {
+    "create": {
+      "title": "Create Booking",
+      "selectTeacher": "Select Teacher",
+      "selectStudent": "Select Student",
+      "selectTime": "Select Time",
+      "confirmDetails": "Confirm Details"
+    },
+    "payment": {
+      "title": "Payment",
+      "amount": "Amount",
+      "method": "Payment Method",
+      "payNow": "Pay Now"
+    },
+    "detail": {
+      "title": "Booking Details"
+    }
+  },
+  "payment": {
+    "methods": {
+      "wechatPay": "WeChat Pay"
+    },
+    "status": {
+      "unpaid": "Unpaid",
+      "paid": "Paid",
+      "refunded": "Refunded"
+    }
+  },
+  "language": {
+    "title": "Language Settings",
+    "chinese": "中文",
+    "english": "English",
+    "changeLanguage": "Change Language",
+    "languageChanged": "Language changed"
+  },
+  "errors": {
+    "generic": "An error occurred, please try again later",
+    "network": "Network connection failed",
+    "unauthorized": "Unauthorized, please log in again",
+    "notFound": "Not found",
+    "serverError": "Server error"
+  },
+  "dashboard": {
+    "title": "Parent Guardian",
+    "subtitle": "Weekly Insights (No Chat Transcripts)",
+    "guardianConsent": "Guardian Consent / Link Child",
+    "pairingCodeLabel": "Please enter the 6-digit consent code shown on the child's device:",
+    "pairingCodePlaceholder": "e.g.: 123456",
+    "relationshipLabel": "Relationship (Optional):",
+    "relationshipPlaceholder": "e.g.: Mother/Father/Guardian",
+    "consentCheckbox": "I have read and agree to my child using this product",
+    "confirmConsent": "Confirm Consent",
+    "stressTrend": "This Week's Stress Trend",
+    "chartPlaceholder": "(Placeholder) 7-day stress curve chart",
+    "teacherMatch": "Tutor/Teacher Matching",
+    "fastSpeech": "Fast Speech",
+    "loudVoice": "Loud Voice",
+    "homeworkPressure": "Homework Pressure",
+    "matchSuggestion": "(Placeholder) Suggestion: Try a slower-paced explanation approach, align with the child's understanding speed first.",
+    "riskAlerts": "Risk Alerts",
+    "riskAlertsDesc": "(Placeholder) If red-line signals appear, event time and category will be displayed here (no original text).",
+    "enableNotifications": "Enable Notifications",
+    "verifyIdentity": "Identity/Guardian Verification (Placeholder)",
+    "fillPairingCode": "Please enter consent code",
+    "checkConsent": "Please check consent",
+    "consentSuccess": "Consent confirmed",
+    "consentFailed": "Consent failed, please try again",
+    "notificationsDeveloping": "Notification subscription in development",
+    "verifyDeveloping": "Verification flow in development"
+  },
+  "waitConsent": {
+    "title": "Waiting for Guardian Consent",
+    "subtitle": "Forward the consent code to the guardian via WeChat, one-click open and complete consent",
+    "pairingCode": "Consent Code",
+    "copyCode": "Copy",
+    "copied": "Copied",
+    "description": "After guardian consent, you can start chatting. We recommend clicking the button below to forward it to the guardian via WeChat to open and complete consent. The parent dashboard only shows trend insights and risk alerts, not chat transcripts.",
+    "iHaveConsented": "I Have Consented",
+    "shareToGuardian": "Share to Guardian via WeChat",
+    "shareTitle": "Please help me complete guardian consent (Consent Code: {code})",
+    "shareTitleNoCode": "Please help me complete guardian consent",
+    "goToParent": "Go to Parent Guardian",
+    "notConsentedYet": "Consent not completed yet",
+    "checkFailed": "Check failed, please try again"
+  }
+}

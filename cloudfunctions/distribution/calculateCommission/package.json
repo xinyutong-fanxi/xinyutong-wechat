@@ -1,0 +1,7 @@
+{
+  "name": "calculateCommission",
+  "version": "1.0.0",
+  "description": "Calculate commission for distributors",
+  "main": "index.js",
+  "dependencies": {}
+}

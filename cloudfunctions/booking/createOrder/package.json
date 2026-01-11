@@ -1,0 +1,7 @@
+{
+  "name": "createOrder",
+  "version": "1.0.0",
+  "description": "Create booking order",
+  "main": "index.js",
+  "dependencies": {}
+}

@@ -1,0 +1,7 @@
+{
+  "name": "trackReferral",
+  "version": "1.0.0",
+  "description": "Track referral relationships",
+  "main": "index.js",
+  "dependencies": {}
+}

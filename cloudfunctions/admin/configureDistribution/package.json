@@ -1,0 +1,7 @@
+{
+  "name": "configureDistribution",
+  "version": "1.0.0",
+  "description": "Update commission rates and distribution rules",
+  "main": "index.js",
+  "dependencies": {}
+}

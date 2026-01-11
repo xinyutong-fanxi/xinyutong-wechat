@@ -1,0 +1,16 @@
+{
+  "name": "XinLing Companion",
+  "appid": "__UNI__XINLING",
+  "description": "XinLing Companion (心灵伙伴) - WeChat Mini Program (uni-app + Vue3)",
+  "versionName": "0.0.1",
+  "versionCode": "1",
+  "transformPx": false,
+  "mp-weixin": {
+    "appid": "wx233b7815c8a6aa3a",
+    "setting": {
+      "urlCheck": false
+    },
+    "cloudfunctionRoot": "cloudfunctions/"
+  }
+}
+

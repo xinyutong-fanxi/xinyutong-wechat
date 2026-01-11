@@ -1,0 +1,7 @@
+{
+  "name": "manageSchedule",
+  "version": "1.0.0",
+  "description": "Manage teacher availability schedule",
+  "main": "index.js",
+  "dependencies": {}
+}

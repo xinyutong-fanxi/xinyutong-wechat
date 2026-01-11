@@ -1,0 +1,7 @@
+{
+  "name": "confirmAppointment",
+  "version": "1.0.0",
+  "description": "Confirm or reject booking appointment",
+  "main": "index.js",
+  "dependencies": {}
+}

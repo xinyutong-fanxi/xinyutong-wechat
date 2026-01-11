@@ -1,0 +1,7 @@
+{
+  "name": "getRecommendations",
+  "version": "1.0.0",
+  "description": "Get intelligent teacher recommendations based on issue type and age",
+  "main": "index.js",
+  "dependencies": {}
+}

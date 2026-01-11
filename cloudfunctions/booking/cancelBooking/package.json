@@ -1,0 +1,7 @@
+{
+  "name": "cancelBooking",
+  "version": "1.0.0",
+  "description": "Cancel booking",
+  "main": "index.js",
+  "dependencies": {}
+}
