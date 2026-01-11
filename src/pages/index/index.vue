@@ -271,58 +271,64 @@ export default {
   transform: scale(0.95);
 }
 .mood-btn.active {
-  border-color: #4A90E2;
-  background: rgba(74, 144, 226, 0.1);
+  border-color: #D60000;
+  background: rgba(214, 0, 0, 0.1);
   transform: translateY(-4rpx) scale(1.05);
-  box-shadow: 0 8rpx 24rpx rgba(74, 144, 226, 0.25), 0 0 0 4rpx rgba(74, 144, 226, 0.1);
+  box-shadow: 0 8rpx 24rpx rgba(214, 0, 0, 0.25), 0 0 0 4rpx rgba(214, 0, 0, 0.1);
 }
 .mood-btn.happy {
-  background: linear-gradient(135deg, rgba(254, 249, 195, 0.98) 0%, rgba(253, 230, 138, 0.98) 100%);
-  border-color: rgba(251, 191, 36, 0.5);
+  background: rgba(255, 255, 255, 0.98);
+  border-color: rgba(229, 231, 235, 0.8);
 }
 .mood-btn.happy.active {
-  border-color: rgba(251, 191, 36, 0.8);
-  box-shadow: 0 8rpx 24rpx rgba(251, 191, 36, 0.3), 0 0 0 4rpx rgba(251, 191, 36, 0.15);
+  border-color: #D60000;
+  background: rgba(214, 0, 0, 0.1);
+  box-shadow: 0 8rpx 24rpx rgba(214, 0, 0, 0.3), 0 0 0 4rpx rgba(214, 0, 0, 0.15);
 }
 .mood-btn.ok {
-  background: rgba(74, 144, 226, 0.1);
-  border-color: rgba(74, 144, 226, 0.4);
+  background: rgba(255, 255, 255, 0.98);
+  border-color: rgba(229, 231, 235, 0.8);
 }
 .mood-btn.ok.active {
-  border-color: #4A90E2;
-  box-shadow: 0 8rpx 24rpx rgba(74, 144, 226, 0.3), 0 0 0 4rpx rgba(74, 144, 226, 0.15);
+  border-color: #D60000;
+  background: rgba(214, 0, 0, 0.1);
+  box-shadow: 0 8rpx 24rpx rgba(214, 0, 0, 0.3), 0 0 0 4rpx rgba(214, 0, 0, 0.15);
 }
 .mood-btn.nervous {
-  background: linear-gradient(135deg, rgba(233, 213, 255, 0.98) 0%, rgba(221, 214, 254, 0.98) 100%);
-  border-color: rgba(124, 58, 237, 0.4);
+  background: rgba(255, 255, 255, 0.98);
+  border-color: rgba(229, 231, 235, 0.8);
 }
 .mood-btn.nervous.active {
-  border-color: rgba(124, 58, 237, 0.8);
-  box-shadow: 0 8rpx 24rpx rgba(124, 58, 237, 0.3), 0 0 0 4rpx rgba(124, 58, 237, 0.15);
+  border-color: #D60000;
+  background: rgba(214, 0, 0, 0.1);
+  box-shadow: 0 8rpx 24rpx rgba(214, 0, 0, 0.3), 0 0 0 4rpx rgba(214, 0, 0, 0.15);
 }
 .mood-btn.sad {
-  background: linear-gradient(135deg, rgba(224, 231, 255, 0.98) 0%, rgba(199, 210, 254, 0.98) 100%);
-  border-color: rgba(99, 102, 241, 0.4);
+  background: rgba(255, 255, 255, 0.98);
+  border-color: rgba(229, 231, 235, 0.8);
 }
 .mood-btn.sad.active {
-  border-color: rgba(99, 102, 241, 0.8);
-  box-shadow: 0 8rpx 24rpx rgba(99, 102, 241, 0.3), 0 0 0 4rpx rgba(99, 102, 241, 0.15);
+  border-color: #D60000;
+  background: rgba(214, 0, 0, 0.1);
+  box-shadow: 0 8rpx 24rpx rgba(214, 0, 0, 0.3), 0 0 0 4rpx rgba(214, 0, 0, 0.15);
 }
 .mood-btn.angry {
-  background: linear-gradient(135deg, rgba(254, 226, 226, 0.98) 0%, rgba(252, 165, 165, 0.98) 100%);
-  border-color: rgba(248, 113, 113, 0.4);
+  background: rgba(255, 255, 255, 0.98);
+  border-color: rgba(229, 231, 235, 0.8);
 }
 .mood-btn.angry.active {
-  border-color: rgba(248, 113, 113, 0.8);
-  box-shadow: 0 8rpx 24rpx rgba(248, 113, 113, 0.3), 0 0 0 4rpx rgba(248, 113, 113, 0.15);
+  border-color: #D60000;
+  background: rgba(214, 0, 0, 0.1);
+  box-shadow: 0 8rpx 24rpx rgba(214, 0, 0, 0.3), 0 0 0 4rpx rgba(214, 0, 0, 0.15);
 }
 .mood-btn.tired {
-  background: linear-gradient(135deg, rgba(240, 253, 250, 0.98) 0%, rgba(153, 246, 228, 0.98) 100%);
-  border-color: rgba(45, 212, 191, 0.4);
+  background: rgba(255, 255, 255, 0.98);
+  border-color: rgba(229, 231, 235, 0.8);
 }
 .mood-btn.tired.active {
-  border-color: rgba(45, 212, 191, 0.8);
-  box-shadow: 0 8rpx 24rpx rgba(45, 212, 191, 0.3), 0 0 0 4rpx rgba(45, 212, 191, 0.15);
+  border-color: #D60000;
+  background: rgba(214, 0, 0, 0.1);
+  box-shadow: 0 8rpx 24rpx rgba(214, 0, 0, 0.3), 0 0 0 4rpx rgba(214, 0, 0, 0.15);
 }
 .mood-emoji {
   font-size: 38rpx;
@@ -339,14 +345,14 @@ export default {
   transition: color 0.2s ease;
 }
 .mood-btn.active .mood-label {
-  color: #4A90E2;
+  color: #323232;
   font-weight: 600;
 }
 .chat {
   flex: 1;
   border-radius: 24rpx;
   background: rgba(255, 255, 255, 0.9);
-  border: 1.5px solid rgba(199, 210, 254, 0.6);
+  border: 1.5px solid rgba(229, 231, 235, 0.6);
   padding: 20rpx;
   box-shadow: 0 12rpx 48rpx rgba(17, 24, 39, 0.1), inset 0 1rpx 0 rgba(255, 255, 255, 0.8);
   transition: all 0.3s ease;
@@ -385,9 +391,9 @@ export default {
   transform: scale(0.98);
 }
 .msg.assistant .bubble {
-  background: rgba(74, 144, 226, 0.1);
-  border-color: rgba(74, 144, 226, 0.3);
-  box-shadow: 0 4rpx 12rpx rgba(74, 144, 226, 0.15);
+  background: rgba(214, 0, 0, 0.1);
+  border-color: rgba(214, 0, 0, 0.3);
+  box-shadow: 0 4rpx 12rpx rgba(214, 0, 0, 0.15);
 }
 .msg.user .bubble {
   background: rgba(255, 255, 255, 0.98);
@@ -408,20 +414,20 @@ export default {
 }
 .vent-btn {
   background: rgba(255, 255, 255, 0.98);
-  color: #4A90E2;
+  color: #D60000;
   border-radius: 24rpx;
   font-size: 26rpx;
   font-weight: 600;
   padding: 0 20rpx;
   height: 76rpx;
   line-height: 76rpx;
-  border: 2px solid #4A90E2;
-  box-shadow: 0 4rpx 12rpx rgba(74, 144, 226, 0.15);
+  border: 2px solid #D60000;
+  box-shadow: 0 4rpx 12rpx rgba(214, 0, 0, 0.15);
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .vent-btn:active {
   transform: scale(0.95);
-  box-shadow: 0 2rpx 6rpx rgba(74, 144, 226, 0.2);
+  box-shadow: 0 2rpx 6rpx rgba(214, 0, 0, 0.2);
 }
 .input {
   flex: 1;
@@ -435,13 +441,13 @@ export default {
   transition: all 0.25s ease;
 }
 .input:focus {
-  border-color: #4A90E2;
+  border-color: #D60000;
   background: rgba(255, 255, 255, 1);
-  box-shadow: 0 0 0 4rpx rgba(74, 144, 226, 0.1), 0 4rpx 12rpx rgba(74, 144, 226, 0.15);
+  box-shadow: 0 0 0 4rpx rgba(214, 0, 0, 0.1), 0 4rpx 12rpx rgba(214, 0, 0, 0.15);
   outline: none;
 }
 .send-btn {
-  background: #4A90E2;
+  background: #D60000;
   color: #ffffff;
   border-radius: 24rpx;
   font-size: 26rpx;
@@ -449,16 +455,16 @@ export default {
   padding: 0 24rpx;
   height: 76rpx;
   line-height: 76rpx;
-  box-shadow: 0 8rpx 24rpx rgba(74, 144, 226, 0.3);
+  box-shadow: 0 8rpx 24rpx rgba(214, 0, 0, 0.3);
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
 }
 .send-btn:active {
   transform: scale(0.95);
-  box-shadow: 0 4rpx 12rpx rgba(74, 144, 226, 0.25);
+  box-shadow: 0 4rpx 12rpx rgba(214, 0, 0, 0.25);
 }
 .send-btn[disabled] {
-  background: #ccc;
+  background: #999;
   color: rgba(255, 255, 255, 0.7);
   box-shadow: none;
   transform: none;
@@ -473,11 +479,11 @@ export default {
 
 .recommendation-card {
   max-width: 85%;
-  background: linear-gradient(135deg, rgba(254, 249, 195, 0.98) 0%, rgba(253, 230, 138, 0.98) 100%);
-  border: 2px solid rgba(251, 191, 36, 0.6);
+  background: rgba(255, 255, 255, 0.98);
+  border: 2px solid rgba(214, 0, 0, 0.3);
   border-radius: 20rpx;
   padding: 24rpx;
-  box-shadow: 0 4rpx 16rpx rgba(251, 191, 36, 0.2);
+  box-shadow: 0 4rpx 16rpx rgba(214, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   gap: 16rpx;
@@ -486,33 +492,33 @@ export default {
 .recommendation-title {
   font-size: 28rpx;
   font-weight: 600;
-  color: #92400e;
+  color: #323232;
   display: block;
 }
 
 .recommendation-text {
   font-size: 26rpx;
-  color: #78350f;
+  color: #323232;
   line-height: 1.6;
   display: block;
 }
 
 .book-button {
-  background: #4A90E2;
+  background: #D60000;
   color: white;
   border-radius: 24rpx;
   padding: 20rpx 30rpx;
   font-size: 26rpx;
   font-weight: 600;
   border: none;
-  box-shadow: 0 4rpx 12rpx rgba(74, 144, 226, 0.3);
+  box-shadow: 0 4rpx 12rpx rgba(214, 0, 0, 0.3);
   transition: all 0.25s ease;
   margin-top: 8rpx;
 }
 
 .book-button:active {
   transform: scale(0.98);
-  box-shadow: 0 2rpx 6rpx rgba(74, 144, 226, 0.25);
+  box-shadow: 0 2rpx 6rpx rgba(214, 0, 0, 0.25);
 }
 </style>
 

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" preserveAspectRatio="xMidYMid meet">
+  <!-- Organic Brush Stroke - Inspired by minimalist calligraphy -->
+  <defs>
+    <!-- Gradient for brush texture -->
+    <linearGradient id="brushGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#323232;stop-opacity:0.08" />
+      <stop offset="50%" style="stop-color:#323232;stop-opacity:0.12" />
+      <stop offset="100%" style="stop-color:#323232;stop-opacity:0.06" />
+    </linearGradient>
+    <!-- Red accent gradient -->
+    <linearGradient id="redBrushGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D60000;stop-opacity:0.04" />
+      <stop offset="50%" style="stop-color:#D60000;stop-opacity:0.06" />
+      <stop offset="100%" style="stop-color:#D60000;stop-opacity:0.03" />
+    </linearGradient>
+  </defs>
+  
+  <g opacity="0.35">
+    <!-- Main organic brush stroke - flowing, curved path -->
+    <path d="M 100 50 
+             Q 180 150, 200 280
+             Q 220 420, 180 550
+             Q 160 650, 120 750" 
+          stroke="url(#brushGradient)" 
+          stroke-width="120" 
+          fill="none" 
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          opacity="0.8"/>
+    
+    <!-- Textured brush edges - overlay for organic feel -->
+    <path d="M 100 50 
+             Q 180 150, 200 280
+             Q 220 420, 180 550
+             Q 160 650, 120 750" 
+          stroke="#323232" 
+          stroke-width="115" 
+          fill="none" 
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          opacity="0.15"/>
+    
+    <!-- Red accent stroke (subtle) -->
+    <path d="M 120 80 
+             Q 190 180, 210 300
+             Q 230 440, 190 570
+             Q 170 670, 130 770" 
+          stroke="url(#redBrushGradient)" 
+          stroke-width="90" 
+          fill="none" 
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          opacity="0.6"/>
+  </g>
+  
+  <!-- Seal (Chop) element with wisdom character -->
+  <g transform="translate(480, 680)" opacity="0.08">
+    <!-- Red seal background -->
+    <rect x="-35" y="-35" width="70" height="70" 
+          fill="#D60000" 
+          opacity="0.4"
+          rx="2"/>
+    <!-- Wisdom character "智" simplified -->
+    <g transform="scale(0.8)">
+      <text x="0" y="15" 
+            font-family="STKaiti, KaiTi, SimKai, serif" 
+            font-size="50" 
+            fill="#323232" 
+            text-anchor="middle"
+            opacity="0.9"
+            font-weight="bold">智</text>
+    </g>
+  </g>
+</svg>

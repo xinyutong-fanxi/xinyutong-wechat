@@ -87,6 +87,14 @@
     "consentHint": "We need guardian confirmation and consent. We recommend forwarding the consent code directly to the guardian via WeChat. The parent dashboard only shows trend insights and risk alerts, and will not display chat transcripts.",
     "generateCode": "Generate Consent Code",
     "skipDev": "(Local Only) Enter Directly",
+    "prev": "Previous",
+    "next": "Next",
+    "steps": {
+      "basic": "Basic Info",
+      "preferences": "Preferences",
+      "support": "Support Needs",
+      "guardian": "Guardian Info"
+    },
     "validation": {
       "nicknameRequired": "Please enter a nickname",
       "ageRequired": "Please enter a valid age",

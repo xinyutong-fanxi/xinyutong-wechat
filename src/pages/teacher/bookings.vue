@@ -222,7 +222,7 @@ onMounted(() => {
 }
 
 .tab.active {
-  background: #4A90E2;
+  background: #D60000;
   color: white;
 }
 
@@ -299,7 +299,7 @@ onMounted(() => {
 }
 
 .action-btn.confirm {
-  background: #4A90E2;
+  background: #D60000;
   color: white;
 }
 

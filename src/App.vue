@@ -38,43 +38,36 @@ export default {
 </script>
 
 <style>
-/* Chinese Painting Aesthetic - Rice Paper Background with Ink Wash */
+/* Minimalist Brush Stroke Aesthetic - Clean Background with Organic Ink */
 page {
-  /* Rice paper base - warm, slightly yellowed */
-  background-color: #F5F1E8;
-  /* Rice paper texture pattern */
+  /* Clean, slightly warm white base - inspired by minimalist calligraphy */
+  background-color: #FAFAF8;
+  /* Subtle texture pattern - very minimal */
   background-image: 
-    /* Subtle paper grain texture */
+    /* Very subtle paper grain texture */
     repeating-linear-gradient(
       0deg,
-      rgba(242, 238, 230, 0.03) 0px,
-      transparent 1px,
+      rgba(242, 242, 240, 0.015) 0px,
       transparent 2px,
-      rgba(242, 238, 230, 0.03) 3px
+      transparent 4px,
+      rgba(242, 242, 240, 0.015) 5px
     ),
     repeating-linear-gradient(
       90deg,
-      rgba(242, 238, 230, 0.03) 0px,
-      transparent 1px,
+      rgba(242, 242, 240, 0.015) 0px,
       transparent 2px,
-      rgba(242, 238, 230, 0.03) 3px
+      transparent 4px,
+      rgba(242, 242, 240, 0.015) 5px
     ),
-    /* Aged paper effect - subtle yellowing gradients */
-    radial-gradient(circle at 20% 30%, rgba(250, 245, 235, 0.4) 0%, transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(248, 242, 232, 0.3) 0%, transparent 50%),
-    /* Ink wash effects - soft gradients */
-    radial-gradient(circle at 10% 80%, rgba(50, 50, 50, 0.02) 0%, transparent 40%),
-    radial-gradient(circle at 90% 20%, rgba(50, 50, 50, 0.015) 0%, transparent 35%);
+    /* Very subtle ink wash - minimal gradients */
+    radial-gradient(circle at 15% 25%, rgba(50, 50, 50, 0.008) 0%, transparent 40%),
+    radial-gradient(circle at 85% 75%, rgba(50, 50, 50, 0.006) 0%, transparent 35%);
   background-size:
     100% 100%,
     100% 100%,
-    100% 100%,
-    100% 100%,
-    120% 120%,
-    120% 120%;
+    150% 150%,
+    150% 150%;
   background-position:
-    0 0,
-    0 0,
     0 0,
     0 0,
     0 0,
@@ -89,7 +82,7 @@ page {
   position: relative;
 }
 
-/* Add subtle brush stroke texture overlay and wisdom silhouette */
+/* Minimalist brush stroke overlay - organic ink stroke with seal */
 page::before {
   content: '';
   position: fixed;
@@ -100,7 +93,7 @@ page::before {
   pointer-events: none;
   background-image: 
     /* Wisdom character "智" (zhì) - Traditional calligraphy style (SVG data URI) */
-    url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgNjAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBtZWV0Ij4KICA8IS0tIENoaW5lc2UgQ2hhcmFjdGVyICLmmboiIChXaXNkb20pIC0gVHJhZGl0aW9uYWwgQ2FsbGlncmFwaHkgU3R5bGUgLS0+CiAgPGcgb3BhY2l0eT0iMC4wNiI+CiAgICA8IS0tIFVzaW5nIHBhdGgtYmFzZWQgc3Ryb2tlcyBmb3IgYmV0dGVyIHJlbmRlcmluZyBjb250cm9sIC0tPgogICAgPCEtLSBTaW1wbGlmaWVkIGNhbGxpZ3JhcGh5IHN0cm9rZXMgZm9yIOaZuiAoemjDrCkgLS0+CiAgICAKICAgIDwhLS0gVG9wIHJhZGljYWwgKOefpSkgc3RydWN0dXJlIC0tPgogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAwLCAxODApIj4KICAgICAgPCEtLSBIb3Jpem9udGFsIHRvcCBzdHJva2VzIC0tPgogICAgICA8cGF0aCBkPSJNLTkwIC0xMDAgTDkwIC0xMDAiIHN0cm9rZT0iIzMyMzIzMiIgc3Ryb2tlLXdpZHRoPSIxMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjciLz4KICAgICAgPHBhdGggZD0iTS04MCAtNzUgTDgwIC03NSIgc3Ryb2tlPSIjMzIzMjMyIiBzdHJva2Utd2lkdGg9IjciIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC42Ii8+CiAgICAgIAogICAgICA8IS0tIExlZnQgdmVydGljYWwgKOefoikgLS0+CiAgICAgIDxwYXRoIGQ9Ik0tNjAgLTEwMCBMLTYwIDYwIiBzdHJva2U9IiMzMjMyMzIiIHN0cm9rZS13aWR0aD0iOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjY1Ii8+CiAgICAgIAogICAgICA8IS0tIFJpZ2h0IHZlcnRpY2FsIHN0cnVjdHVyZSAtLT4KICAgICAgPHBhdGggZD0iTTcwIC0xMDAgTDcwIDYwIiBzdHJva2U9IiMzMjMyMzIiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjYiLz4KICAgICAgCiAgICAgIDwhLS0gTWlkZGxlIGhvcml6b250YWwgLS0+CiAgICAgIDxwYXRoIGQ9Ik0tNTAgLTQwIEw1MCAtNDAiIHN0cm9rZT0iIzMyMzIzMiIgc3Ryb2tlLXdpZHRoPSI2IiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNTUiLz4KICAgICAgCiAgICAgIDwhLS0gRGlhZ29uYWwgc3Ryb2tlcyAobW91dGggcmFkaWNhbCkgLS0+CiAgICAgIDxwYXRoIGQ9Ik0tNDAgLTYwIEwtNDAgMzAiIHN0cm9rZT0iIzMyMzIzMiIgc3Ryb2tlLXdpZHRoPSI2IiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNSIvPgogICAgICA8cGF0aCBkPSJNLTMwIC01MCBMLTMwIDIwIiBzdHJva2U9IiMzMjMyMzIiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjQ1Ii8+CiAgICA8L2c+CiAgICAKICAgIDwhLS0gQm90dG9tIHJhZGljYWwgKOaXpSkgc3RydWN0dXJlIC0tPgogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAwLCAzMjApIj4KICAgICAgPCEtLSBCb3ggc2hhcGUgLS0+CiAgICAgIDxwYXRoIGQ9Ik0tNzAgLTMwIEw3MCAtMzAgTDcwIDYwIEwtNzAgNjAgWiIgc3Ryb2tlPSIjMzIzMjMyIiBzdHJva2Utd2lkdGg9IjgiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgb3BhY2l0eT0iMC42Ii8+CiAgICAgIDwhLS0gSW50ZXJuYWwgaG9yaXpvbnRhbCAtLT4KICAgICAgPHBhdGggZD0iTS02MCA1IEw2MCA1IiBzdHJva2U9IiMzMjMyMzIiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjUiLz4KICAgICAgPCEtLSBJbnRlcm5hbCB2ZXJ0aWNhbCAtLT4KICAgICAgPHBhdGggZD0iTTAgLTMwIEwwIDYwIiBzdHJva2U9IiMzMjMyMzIiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjQ1Ii8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K'),
+    url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgODAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBtZWV0Ij4KICA8IS0tIE9yZ2FuaWMgQnJ1c2ggU3Ryb2tlIC0gSW5zcGlyZWQgYnkgbWluaW1hbGlzdCBjYWxsaWdyYXBoeSAtLT4KICA8ZGVmcz4KICAgIDwhLS0gR3JhZGllbnQgZm9yIGJydXNoIHRleHR1cmUgLS0+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJydXNoR3JhZGllbnQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6IzMyMzIzMjtzdG9wLW9wYWNpdHk6MC4wOCIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMzMjMyMzI7c3RvcC1vcGFjaXR5OjAuMTIiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6IzMyMzIzMjtzdG9wLW9wYWNpdHk6MC4wNiIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8IS0tIFJlZCBhY2NlbnQgZ3JhZGllbnQgLS0+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InJlZEJydXNoR3JhZGllbnQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I0Q2MDAwMDtzdG9wLW9wYWNpdHk6MC4wNCIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNENjAwMDA7c3RvcC1vcGFjaXR5OjAuMDYiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I0Q2MDAwMDtzdG9wLW9wYWNpdHk6MC4wMyIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIAogIDxnIG9wYWNpdHk9IjAuMzUiPgogICAgPCEtLSBNYWluIG9yZ2FuaWMgYnJ1c2ggc3Ryb2tlIC0gZmxvd2luZywgY3VydmVkIHBhdGggLS0+CiAgICA8cGF0aCBkPSJNIDEwMCA1MCAKICAgICAgICAgICAgIFEgMTgwIDE1MCwgMjAwIDI4MAogICAgICAgICAgICAgUSAyMjAgNDIwLCAxODAgNTUwCiAgICAgICAgICAgICBRIDE2MCA2NTAsIDEyMCA3NTAiIAogICAgICAgICAgc3Ryb2tlPSJ1cmwoI2JydXNoR3JhZGllbnQpIiAKICAgICAgICAgIHN0cm9rZS13aWR0aD0iMTIwIiAKICAgICAgICAgIGZpbGw9Im5vbmUiIAogICAgICAgICAgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIgogICAgICAgICAgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIKICAgICAgICAgIG9wYWNpdHk9IjAuOCIvPgogICAgCiAgICA8IS0tIFRleHR1cmVkIGJydXNoIGVkZ2VzIC0gb3ZlcmxheSBmb3Igb3JnYW5pYyBmZWVsIC0tPgogICAgPHBhdGggZD0iTSAxMDAgNTAgCiAgICAgICAgICAgICBRIDE4MCAxNTAsIDIwMCAyODAKICAgICAgICAgICAgIFEgMjIwIDQyMCwgMTgwIDU1MAogICAgICAgICAgICAgUSAxNjAgNjUwLCAxMjAgNzUwIiAKICAgICAgICAgIHN0cm9rZT0iIzMyMzIzMiIgCiAgICAgICAgICBzdHJva2Utd2lkdGg9IjExNSIgCiAgICAgICAgICBmaWxsPSJub25lIiAKICAgICAgICAgIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIKICAgICAgICAgIHN0cm9rZS1saW5lam9pbj0icm91bmQiCiAgICAgICAgICBvcGFjaXR5PSIwLjE1Ii8+CiAgICAKICAgIDwhLS0gUmVkIGFjY2VudCBzdHJva2UgKHN1YnRsZSkgLS0+CiAgICA8cGF0aCBkPSJNIDEyMCA4MCAKICAgICAgICAgICAgIFEgMTkwIDE4MCwgMjEwIDMwMAogICAgICAgICAgICAgUSAyMzAgNDQwLCAxOTAgNTcwCiAgICAgICAgICAgICBRIDE3MCA2NzAsIDEzMCA3NzAiIAogICAgICAgICAgc3Ryb2tlPSJ1cmwoI3JlZEJydXNoR3JhZGllbnQpIiAKICAgICAgICAgIHN0cm9rZS13aWR0aD0iOTAiIAogICAgICAgICAgZmlsbD0ibm9uZSIgCiAgICAgICAgICBzdHJva2UtbGluZWNhcD0icm91bmQiCiAgICAgICAgICBzdHJva2UtbGluZWpvaW49InJvdW5kIgogICAgICAgICAgb3BhY2l0eT0iMC42Ii8+CiAgPC9nPgogIAogIDwhLS0gU2VhbCAoQ2hvcCkgZWxlbWVudCB3aXRoIHdpc2RvbSBjaGFyYWN0ZXIgLS0+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDgwLCA2ODApIiBvcGFjaXR5PSIwLjA4Ij4KICAgIDwhLS0gUmVkIHNlYWwgYmFja2dyb3VuZCAtLT4KICAgIDxyZWN0IHg9Ii0zNSIgeT0iLTM1IiB3aWR0aD0iNzAiIGhlaWdodD0iNzAiIAogICAgICAgICAgZmlsbD0iI0Q2MDAwMCIgCiAgICAgICAgICBvcGFjaXR5PSIwLjQiCiAgICAgICAgICByeD0iMiIvPgogICAgPCEtLSBXaXNkb20gY2hhcmFjdGVyICLmmboiIHNpbXBsaWZpZWQgLS0+CiAgICA8ZyB0cmFuc2Zvcm09InNjYWxlKDAuOCkiPgogICAgICA8dGV4dCB4PSIwIiB5PSIxNSIgCiAgICAgICAgICAgIGZvbnQtZmFtaWx5PSJTVEthaXRpLCBLYWlUaSwgU2ltS2FpLCBzZXJpZiIgCiAgICAgICAgICAgIGZvbnQtc2l6ZT0iNTAiIAogICAgICAgICAgICBmaWxsPSIjMzIzMjMyIiAKICAgICAgICAgICAgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgICAgICAgICAgb3BhY2l0eT0iMC45IgogICAgICAgICAgICBmb250LXdlaWdodD0iYm9sZCI+5pm6PC90ZXh0PgogICAgPC9nPgogIDwvZz4KPC9zdmc+Cg=='),
     /* Brush stroke patterns */
     repeating-linear-gradient(
       45deg,
@@ -127,7 +120,7 @@ page::before {
     0 0,
     0 0;
   background-repeat: no-repeat;
-  opacity: 0.35;
+  opacity: 0.4;
   z-index: 0;
 }
 

@@ -194,7 +194,7 @@ onMounted(() => {
 
 .save-button {
   width: 100%;
-  background: #4A90E2;
+  background: #D60000;
   color: white;
   border-radius: 8rpx;
   padding: 30rpx;
@@ -225,7 +225,7 @@ onMounted(() => {
 .stat-value {
   font-size: 32rpx;
   font-weight: bold;
-  color: #4A90E2;
+  color: #D60000;
 }
 
 .stat-label {

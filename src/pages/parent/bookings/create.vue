@@ -316,7 +316,7 @@ async function handleSubmit() {
 }
 
 .step.active .step-number {
-  background: #4A90E2;
+  background: #D60000;
   color: white;
 }
 
@@ -331,7 +331,7 @@ async function handleSubmit() {
 }
 
 .step.active .step-label {
-  color: #4A90E2;
+  color: #D60000;
   font-weight: bold;
 }
 
@@ -343,7 +343,7 @@ async function handleSubmit() {
 }
 
 .step-line.active {
-  background: #4A90E2;
+  background: #D60000;
 }
 
 .step-content {
@@ -376,7 +376,7 @@ async function handleSubmit() {
 }
 
 .student-option.selected {
-  border-color: #4A90E2;
+  border-color: #D60000;
   background: #e6f3ff;
 }
 
@@ -392,7 +392,7 @@ async function handleSubmit() {
 
 .next-button, .submit-button {
   width: 100%;
-  background: #4A90E2;
+  background: #D60000;
   color: white;
   border-radius: 8rpx;
   padding: 25rpx;

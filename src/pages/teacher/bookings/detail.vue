@@ -215,7 +215,7 @@ function navigateTo(url) {
 
 .action-button {
   width: 100%;
-  background: #4A90E2;
+  background: #D60000;
   color: white;
   border-radius: 8rpx;
   padding: 30rpx;

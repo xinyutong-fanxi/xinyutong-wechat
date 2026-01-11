@@ -71,7 +71,7 @@ const sizeClass = computed(() => {
   width: 12rpx;
   height: 12rpx;
   border-radius: 50%;
-  background: #4A90E2;
+  background: #D60000;
   animation: bounce 1.4s infinite ease-in-out both;
 }
 

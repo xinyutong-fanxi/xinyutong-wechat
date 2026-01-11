@@ -103,7 +103,7 @@ function handleClick() {
 
 .badge {
   font-size: 20rpx;
-  color: #4A90E2;
+  color: #D60000;
   background: #e6f3ff;
   padding: 4rpx 10rpx;
   border-radius: 6rpx;
@@ -122,7 +122,7 @@ function handleClick() {
 
 .tag {
   font-size: 22rpx;
-  color: #4A90E2;
+  color: #D60000;
   background: #e6f3ff;
   padding: 4rpx 12rpx;
   border-radius: 8rpx;

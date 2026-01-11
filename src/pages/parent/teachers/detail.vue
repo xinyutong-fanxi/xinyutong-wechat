@@ -187,7 +187,7 @@ function navigateTo(url) {
 
 .tag {
   font-size: 26rpx;
-  color: #4A90E2;
+  color: #D60000;
   background: #e6f3ff;
   padding: 8rpx 16rpx;
   border-radius: 8rpx;
@@ -239,7 +239,7 @@ function navigateTo(url) {
 
 .book-button {
   width: 100%;
-  background: #4A90E2;
+  background: #D60000;
   color: white;
   border-radius: 8rpx;
   padding: 25rpx;

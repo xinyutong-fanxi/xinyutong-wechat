@@ -115,7 +115,7 @@ onMounted(() => {
 .stat-value {
   font-size: 36rpx;
   font-weight: bold;
-  color: #4A90E2;
+  color: #D60000;
 }
 
 .quick-actions {

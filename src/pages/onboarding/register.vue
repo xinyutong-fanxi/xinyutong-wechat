@@ -15,24 +15,52 @@
       </view>
     </view>
 
-    <view class="card">
-      <text class="card-title">{{ $t('onboarding.childInfo') }}</text>
+    <!-- Step Indicator -->
+    <view class="step-indicator">
+      <view class="step" :class="{ active: currentStep >= 1, completed: currentStep > 1 }">
+        <view class="step-number">1</view>
+        <text class="step-label">{{ $t('onboarding.steps.basic') }}</text>
+      </view>
+      <view class="step-line" :class="{ active: currentStep > 1 }"></view>
+      <view class="step" :class="{ active: currentStep >= 2, completed: currentStep > 2 }">
+        <view class="step-number">2</view>
+        <text class="step-label">{{ $t('onboarding.steps.preferences') }}</text>
+      </view>
+      <view class="step-line" :class="{ active: currentStep > 2 }"></view>
+      <view class="step" :class="{ active: currentStep >= 3, completed: currentStep > 3 }">
+        <view class="step-number">3</view>
+        <text class="step-label">{{ $t('onboarding.steps.support') }}</text>
+      </view>
+      <view class="step-line" :class="{ active: currentStep > 3 }"></view>
+      <view class="step" :class="{ active: currentStep >= 4 }">
+        <view class="step-number">4</view>
+        <text class="step-label">{{ $t('onboarding.steps.guardian') }}</text>
+      </view>
+    </view>
 
+    <!-- Step 1: Basic Info (nickname, age, grade) -->
+    <view class="card step-content" v-if="currentStep === 1">
+      <text class="card-title">{{ $t('onboarding.steps.basic') }}</text>
+      
       <view class="field">
         <text class="label">{{ $t('onboarding.nickname') }}</text>
         <input class="input" v-model="child.nickname" :placeholder="$t('onboarding.nicknamePlaceholder')" />
       </view>
 
-      <view class="row">
-        <view class="field half">
-          <text class="label">{{ $t('onboarding.age') }}</text>
-          <input class="input" type="number" v-model="child.age" :placeholder="$t('onboarding.agePlaceholder')" />
-        </view>
-        <view class="field half">
-          <text class="label">{{ $t('onboarding.grade') }}</text>
-          <input class="input" v-model="child.grade" :placeholder="$t('onboarding.gradePlaceholder')" />
-        </view>
+      <view class="field">
+        <text class="label">{{ $t('onboarding.age') }}</text>
+        <input class="input" type="number" v-model="child.age" :placeholder="$t('onboarding.agePlaceholder')" />
       </view>
+
+      <view class="field">
+        <text class="label">{{ $t('onboarding.grade') }}</text>
+        <input class="input" v-model="child.grade" :placeholder="$t('onboarding.gradePlaceholder')" />
+      </view>
+    </view>
+
+    <!-- Step 2: Preferences (language, interests) -->
+    <view class="card step-content" v-if="currentStep === 2">
+      <text class="card-title">{{ $t('onboarding.steps.preferences') }}</text>
 
       <view class="field">
         <text class="label">{{ $t('onboarding.language') }}</text>
@@ -45,6 +73,11 @@
         <text class="label">{{ $t('onboarding.interests') }}</text>
         <input class="input" v-model="child.interests" :placeholder="$t('onboarding.interestsPlaceholder')" />
       </view>
+    </view>
+
+    <!-- Step 3: Support (goals, sensitivities) -->
+    <view class="card step-content" v-if="currentStep === 3">
+      <text class="card-title">{{ $t('onboarding.steps.support') }}</text>
 
       <view class="field">
         <text class="label">{{ $t('onboarding.goals') }}</text>
@@ -57,7 +90,8 @@
       </view>
     </view>
 
-    <view class="card">
+    <!-- Step 4: Guardian Info (contact, relationship) -->
+    <view class="card step-content" v-if="currentStep === 4">
       <text class="card-title">{{ $t('onboarding.guardianInfo') }}</text>
 
       <view class="field">
@@ -79,9 +113,12 @@
       </view>
     </view>
 
+    <!-- Navigation Buttons -->
     <view class="footer">
-      <button class="primary" :disabled="submitting" @click="submit">{{ $t('onboarding.generateCode') }}</button>
-      <button class="ghost" @click="skipDev">{{ $t('onboarding.skipDev') }}</button>
+      <button v-if="currentStep > 1" class="ghost" @click="prevStep">{{ $t('onboarding.prev') }}</button>
+      <button v-if="currentStep < 4" class="primary" @click="nextStep">{{ $t('onboarding.next') }}</button>
+      <button v-if="currentStep === 4" class="primary" :disabled="submitting" @click="submit">{{ $t('onboarding.generateCode') }}</button>
+      <button class="ghost" @click="skipDev" v-if="currentStep === 1">{{ $t('onboarding.skipDev') }}</button>
     </view>
   </view>
 </template>
@@ -92,6 +129,7 @@ import { registerChildStart } from '../../utils/cloud/onboardingApi'
 export default {
   data() {
     return {
+      currentStep: 1,
       submitting: false,
       child: {
         nickname: '',
@@ -147,18 +185,37 @@ export default {
         this.guardian.relationship = selected.value
       }
     },
+    validateStep(step) {
+      if (step === 1) {
+        const nickname = (this.child.nickname || '').trim()
+        const age = Number(String(this.child.age || '').trim())
+        if (!nickname) {
+          uni.showToast({ title: this.$t('onboarding.validation.nicknameRequired'), icon: 'none' })
+          return false
+        }
+        if (!Number.isFinite(age) || age < 5 || age > 20) {
+          uni.showToast({ title: this.$t('onboarding.validation.ageRequired'), icon: 'none' })
+          return false
+        }
+      }
+      // Steps 2, 3, 4 are all optional fields, so no validation needed
+      return true
+    },
+    nextStep() {
+      if (this.validateStep(this.currentStep)) {
+        if (this.currentStep < 4) {
+          this.currentStep++
+        }
+      }
+    },
+    prevStep() {
+      if (this.currentStep > 1) {
+        this.currentStep--
+      }
+    },
     async submit() {
       if (this.submitting) return
-      const nickname = (this.child.nickname || '').trim()
-      const age = Number(String(this.child.age || '').trim())
-      if (!nickname) {
-        uni.showToast({ title: this.$t('onboarding.validation.nicknameRequired'), icon: 'none' })
-        return
-      }
-      if (!Number.isFinite(age) || age < 5 || age > 20) {
-        uni.showToast({ title: this.$t('onboarding.validation.ageRequired'), icon: 'none' })
-        return
-      }
+      if (!this.validateStep(4)) return
 
       this.submitting = true
       try {
@@ -174,8 +231,8 @@ export default {
         
         const res = await registerChildStart({
           childProfile: {
-            nickname,
-            age,
+            nickname: (this.child.nickname || '').trim(),
+            age: Number(String(this.child.age || '').trim()),
             grade: (this.child.grade || '').trim() || null,
             language: languageMap[this.child.language] || '中文',
             interests: (this.child.interests || '').trim() || null,
@@ -228,14 +285,14 @@ export default {
   padding: 16rpx 18rpx;
   border-radius: 24rpx;
   background: rgba(255, 255, 255, 0.85);
-  border: 1.5px solid rgba(147, 197, 253, 0.6);
-  box-shadow: 0 8rpx 32rpx rgba(59, 130, 246, 0.15), 0 2rpx 8rpx rgba(59, 130, 246, 0.1);
+  border: 1.5px solid rgba(229, 231, 235, 0.6);
+  box-shadow: 0 8rpx 32rpx rgba(17, 24, 39, 0.1), inset 0 1rpx 0 rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(12px);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero:active {
   transform: scale(0.98);
-  box-shadow: 0 4rpx 16rpx rgba(59, 130, 246, 0.12);
+  box-shadow: 0 4rpx 16rpx rgba(17, 24, 39, 0.08);
 }
 .hero-text {
   flex: 1;
@@ -263,17 +320,17 @@ export default {
 .chip {
   padding: 10rpx 16rpx;
   border-radius: 999rpx;
-  background: rgba(74, 144, 226, 0.1);
-  border: 1.5px solid rgba(74, 144, 226, 0.4);
-  color: #4A90E2;
+  background: rgba(214, 0, 0, 0.1);
+  border: 1.5px solid rgba(214, 0, 0, 0.4);
+  color: #D60000;
   font-size: 22rpx;
   font-weight: 500;
-  box-shadow: 0 2rpx 6rpx rgba(74, 144, 226, 0.1);
+  box-shadow: 0 2rpx 6rpx rgba(214, 0, 0, 0.1);
   transition: all 0.25s ease;
 }
 .chip:active {
   transform: scale(0.95);
-  box-shadow: 0 1rpx 3rpx rgba(74, 144, 226, 0.15);
+  box-shadow: 0 1rpx 3rpx rgba(214, 0, 0, 0.15);
 }
 .hero-img {
   width: 150rpx;
@@ -286,58 +343,136 @@ export default {
 .hero-img:active {
   transform: scale(0.95);
 }
+
+/* Step Indicator */
+.step-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30rpx;
+  padding: 24rpx;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 24rpx;
+  border: 1.5px solid rgba(229, 231, 235, 0.6);
+}
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rpx;
+  flex: 0 0 auto;
+}
+.step-number {
+  width: 56rpx;
+  height: 56rpx;
+  border-radius: 28rpx;
+  background: rgba(229, 231, 235, 0.8);
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26rpx;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.step.active .step-number {
+  background: #D60000;
+  color: white;
+  box-shadow: 0 4rpx 12rpx rgba(214, 0, 0, 0.3);
+}
+.step.completed .step-number {
+  background: #323232;
+  color: white;
+}
+.step-label {
+  font-size: 20rpx;
+  color: #999;
+  transition: color 0.3s ease;
+}
+.step.active .step-label {
+  color: #323232;
+  font-weight: 600;
+}
+.step.completed .step-label {
+  color: #666;
+}
+.step-line {
+  width: 60rpx;
+  height: 3rpx;
+  background: rgba(229, 231, 235, 0.8);
+  margin: 0 8rpx;
+  transition: background 0.3s ease;
+}
+.step-line.active {
+  background: #323232;
+}
+
 .card {
   background: rgba(255, 255, 255, 0.95);
-  border: 1.5px solid rgba(199, 210, 254, 0.5);
+  border: 1.5px solid rgba(229, 231, 235, 0.6);
   border-radius: 24rpx;
-  padding: 22rpx;
+  padding: 32rpx;
   margin-bottom: 18rpx;
-  box-shadow: 0 8rpx 32rpx rgba(17, 24, 39, 0.1), inset 0 1rpx 0 rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8rpx 32rpx rgba(17, 24, 39, 0.08), inset 0 1rpx 0 rgba(255, 255, 255, 0.8);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: slideIn 0.3s ease-out;
 }
-.card:active {
-  transform: translateY(-2rpx);
-  box-shadow: 0 12rpx 40rpx rgba(17, 24, 39, 0.12), inset 0 1rpx 0 rgba(255, 255, 255, 0.8);
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20rpx);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.step-content {
+  min-height: 400rpx;
 }
 .card-title {
-  font-size: 30rpx;
+  font-size: 32rpx;
   font-weight: 700;
   color: #323232;
   letter-spacing: -0.3rpx;
-  margin-bottom: 6rpx;
+  margin-bottom: 24rpx;
+  display: block;
 }
 .field {
-  margin-top: 16rpx;
+  margin-top: 24rpx;
+}
+.field:first-child {
+  margin-top: 0;
 }
 .label {
   display: block;
-  font-size: 24rpx;
-  color: #666;
-  margin-bottom: 10rpx;
+  font-size: 26rpx;
+  color: #323232;
+  margin-bottom: 12rpx;
   font-weight: 500;
 }
 .input {
-  height: 76rpx;
+  height: 88rpx;
   background: rgba(255, 255, 255, 0.98);
   border: 2px solid rgba(229, 231, 235, 0.8);
   border-radius: 24rpx;
-  padding: 0 20rpx;
+  padding: 0 24rpx;
   font-size: 28rpx;
   color: #323232;
   transition: all 0.25s ease;
 }
 .input:focus {
-  border-color: #4A90E2;
+  border-color: #D60000;
   background: rgba(255, 255, 255, 1);
-  box-shadow: 0 0 0 4rpx rgba(74, 144, 226, 0.1), 0 4rpx 12rpx rgba(74, 144, 226, 0.15);
+  box-shadow: 0 0 0 4rpx rgba(214, 0, 0, 0.1), 0 4rpx 12rpx rgba(214, 0, 0, 0.15);
   outline: none;
 }
 .picker {
-  height: 76rpx;
+  height: 88rpx;
   background: rgba(255, 255, 255, 0.98);
   border: 2px solid rgba(229, 231, 235, 0.8);
   border-radius: 24rpx;
-  padding: 0 20rpx;
+  padding: 0 24rpx;
   font-size: 28rpx;
   display: flex;
   align-items: center;
@@ -345,19 +480,14 @@ export default {
   transition: all 0.25s ease;
 }
 .picker:active {
-  border-color: #4A90E2;
+  border-color: #D60000;
   background: rgba(255, 255, 255, 1);
-  box-shadow: 0 0 0 4rpx rgba(74, 144, 226, 0.1), 0 4rpx 12rpx rgba(74, 144, 226, 0.15);
-}
-.row {
-  display: flex;
-  gap: 14rpx;
-}
-.half {
-  flex: 1;
+  box-shadow: 0 0 0 4rpx rgba(214, 0, 0, 0.1), 0 4rpx 12rpx rgba(214, 0, 0, 0.15);
 }
 .hint {
-  margin-top: 14rpx;
+  margin-top: 24rpx;
+  padding-top: 20rpx;
+  border-top: 1px solid rgba(229, 231, 235, 0.6);
 }
 .muted {
   color: #666;
@@ -365,51 +495,52 @@ export default {
   line-height: 1.6;
 }
 .footer {
-  margin-top: 12rpx;
+  margin-top: 20rpx;
   display: flex;
   gap: 14rpx;
+  align-items: center;
+}
+.footer button {
+  flex: 1;
 }
 .primary {
-  flex: 2;
-  background: #4A90E2;
+  background: #D60000;
   color: #fff;
   border-radius: 24rpx;
   height: 88rpx;
   line-height: 88rpx;
   font-size: 28rpx;
   font-weight: 600;
-  box-shadow: 0 8rpx 24rpx rgba(74, 144, 226, 0.3);
+  box-shadow: 0 8rpx 24rpx rgba(214, 0, 0, 0.3);
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
 }
 .primary:active {
   transform: scale(0.96);
-  box-shadow: 0 4rpx 12rpx rgba(74, 144, 226, 0.25);
+  box-shadow: 0 4rpx 12rpx rgba(214, 0, 0, 0.25);
 }
 .primary[disabled] {
-  background: #ccc;
+  background: #999;
   color: rgba(255, 255, 255, 0.7);
   box-shadow: none;
   transform: none;
 }
 .ghost {
-  flex: 1;
   background: rgba(255, 255, 255, 0.9);
-  color: #4A90E2;
-  border: 2px solid #4A90E2;
+  color: #D60000;
+  border: 2px solid #D60000;
   border-radius: 24rpx;
   height: 88rpx;
   line-height: 88rpx;
   font-size: 26rpx;
   font-weight: 600;
-  box-shadow: 0 4rpx 12rpx rgba(74, 144, 226, 0.1);
+  box-shadow: 0 4rpx 12rpx rgba(214, 0, 0, 0.1);
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .ghost:active {
   transform: scale(0.96);
-  background: rgba(74, 144, 226, 0.1);
-  border-color: #4A90E2;
-  box-shadow: 0 2rpx 6rpx rgba(74, 144, 226, 0.15);
+  background: rgba(214, 0, 0, 0.1);
+  border-color: #D60000;
+  box-shadow: 0 2rpx 6rpx rgba(214, 0, 0, 0.15);
 }
 </style>
-

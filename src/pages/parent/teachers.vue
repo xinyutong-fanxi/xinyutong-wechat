@@ -176,7 +176,7 @@ onMounted(() => {
 }
 
 .filter-tab.active {
-  background: #4A90E2;
+  background: #D60000;
   color: white;
 }
 
@@ -227,7 +227,7 @@ onMounted(() => {
 
 .tag {
   font-size: 22rpx;
-  color: #4A90E2;
+  color: #D60000;
   background: #e6f3ff;
   padding: 4rpx 12rpx;
   border-radius: 8rpx;

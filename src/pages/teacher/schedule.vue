@@ -305,7 +305,7 @@ onMounted(() => {
 
 .nav-btn {
   font-size: 48rpx;
-  color: #4A90E2;
+  color: #D60000;
   font-weight: bold;
 }
 
@@ -353,7 +353,7 @@ onMounted(() => {
 
 .calendar-day.today {
   background: #e6f3ff;
-  border: 2rpx solid #4A90E2;
+  border: 2rpx solid #D60000;
 }
 
 .calendar-day.available {
@@ -375,7 +375,7 @@ onMounted(() => {
   left: 0;
   right: 0;
   background: white;
-  border: 2rpx solid #4A90E2;
+  border: 2rpx solid #D60000;
   border-radius: 8rpx;
   padding: 20rpx;
   z-index: 10;
@@ -412,7 +412,7 @@ onMounted(() => {
 
 .time-slot:active {
   background: #e6f3ff;
-  border-color: #4A90E2;
+  border-color: #D60000;
 }
 
 .time-slot.available {
@@ -458,7 +458,7 @@ onMounted(() => {
 
 .save-button {
   width: 100%;
-  background: #4A90E2;
+  background: #D60000;
   color: white;
   border-radius: 8rpx;
   padding: 30rpx;

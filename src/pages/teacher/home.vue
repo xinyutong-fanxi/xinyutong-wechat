@@ -182,7 +182,7 @@ onMounted(() => {
 .stat-value {
   font-size: 32rpx;
   font-weight: bold;
-  color: #4A90E2;
+  color: #D60000;
 }
 
 .stat-label {
@@ -211,7 +211,7 @@ onMounted(() => {
 
 .view-all {
   font-size: 26rpx;
-  color: #4A90E2;
+  color: #D60000;
 }
 
 .bookings-list {

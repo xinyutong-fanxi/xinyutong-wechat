@@ -96,7 +96,7 @@ function handleAddNew() {
 }
 
 .student-option.selected {
-  border-color: #4A90E2;
+  border-color: #D60000;
   background: #e6f3ff;
 }
 
@@ -104,7 +104,7 @@ function handleAddNew() {
   width: 80rpx;
   height: 80rpx;
   border-radius: 40rpx;
-  background: #4A90E2;
+  background: #D60000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -139,7 +139,7 @@ function handleAddNew() {
   width: 40rpx;
   height: 40rpx;
   border-radius: 20rpx;
-  background: #4A90E2;
+  background: #D60000;
   color: white;
   display: flex;
   align-items: center;
@@ -155,7 +155,7 @@ function handleAddNew() {
 
 .add-icon {
   font-size: 48rpx;
-  color: #4A90E2;
+  color: #D60000;
   margin-bottom: 10rpx;
 }
 

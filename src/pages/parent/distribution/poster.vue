@@ -196,15 +196,15 @@ onMounted(() => {
 .action-button {
   width: 100%;
   background: white;
-  color: #4A90E2;
-  border: 2rpx solid #4A90E2;
+  color: #D60000;
+  border: 2rpx solid #D60000;
   border-radius: 8rpx;
   padding: 25rpx;
   font-size: 32rpx;
 }
 
 .action-button.primary {
-  background: #4A90E2;
+  background: #D60000;
   color: white;
 }
 
@@ -232,13 +232,13 @@ onMounted(() => {
   flex: 1;
   font-size: 32rpx;
   font-weight: bold;
-  color: #4A90E2;
+  color: #D60000;
   text-align: center;
 }
 
 .copy-button {
   padding: 15rpx 30rpx;
-  background: #4A90E2;
+  background: #D60000;
   color: white;
   border-radius: 8rpx;
   font-size: 26rpx;

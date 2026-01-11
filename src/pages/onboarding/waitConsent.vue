@@ -168,7 +168,7 @@ export default {
 .code {
   font-size: 44rpx;
   font-weight: 700;
-  color: #4A90E2;
+  color: #D60000;
   letter-spacing: 6rpx;
   transition: color 0.2s ease;
 }
@@ -198,20 +198,20 @@ export default {
 }
 .primary {
   flex: 1;
-  background: #4A90E2;
+  background: #D60000;
   color: #fff;
   border-radius: 24rpx;
   height: 88rpx;
   line-height: 88rpx;
   font-size: 28rpx;
   font-weight: 600;
-  box-shadow: 0 8rpx 24rpx rgba(74, 144, 226, 0.3);
+  box-shadow: 0 8rpx 24rpx rgba(214, 0, 0, 0.3);
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
 }
 .primary:active {
   transform: scale(0.96);
-  box-shadow: 0 4rpx 12rpx rgba(74, 144, 226, 0.25);
+  box-shadow: 0 4rpx 12rpx rgba(214, 0, 0, 0.25);
 }
 .primary[disabled] {
   background: #ccc;
@@ -222,21 +222,21 @@ export default {
 .ghost {
   flex: 1;
   background: rgba(255, 255, 255, 0.9);
-  color: #4A90E2;
-  border: 2px solid #4A90E2;
+  color: #D60000;
+  border: 2px solid #D60000;
   border-radius: 24rpx;
   height: 88rpx;
   line-height: 88rpx;
   font-size: 26rpx;
   font-weight: 600;
-  box-shadow: 0 4rpx 12rpx rgba(74, 144, 226, 0.1);
+  box-shadow: 0 4rpx 12rpx rgba(214, 0, 0, 0.1);
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .ghost:active {
   transform: scale(0.96);
-  background: rgba(74, 144, 226, 0.1);
-  border-color: #4A90E2;
-  box-shadow: 0 2rpx 6rpx rgba(74, 144, 226, 0.15);
+  background: rgba(214, 0, 0, 0.1);
+  border-color: #D60000;
+  box-shadow: 0 2rpx 6rpx rgba(214, 0, 0, 0.15);
 }
 </style>
 

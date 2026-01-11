@@ -87,6 +87,14 @@
     "consentHint": "我们需要监护人确认同意使用。建议直接通过微信把同意码转发给监护人。本产品的家长端只看到趋势洞察与风险提醒，不会看到聊天原文。",
     "generateCode": "生成同意码",
     "skipDev": "（仅本地）直接进入",
+    "prev": "上一步",
+    "next": "下一步",
+    "steps": {
+      "basic": "基本信息",
+      "preferences": "偏好设置",
+      "support": "支持需求",
+      "guardian": "监护人信息"
+    },
     "validation": {
       "nicknameRequired": "请填写昵称",
       "ageRequired": "请填写合理年龄",

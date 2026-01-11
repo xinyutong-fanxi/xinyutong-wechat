@@ -178,7 +178,7 @@ async function handlePay() {
 }
 
 .payment-option.selected {
-  border-color: #4A90E2;
+  border-color: #D60000;
   background: #e6f3ff;
 }
 
@@ -196,7 +196,7 @@ async function handlePay() {
 
 .check-icon {
   font-size: 32rpx;
-  color: #4A90E2;
+  color: #D60000;
   font-weight: bold;
 }
 

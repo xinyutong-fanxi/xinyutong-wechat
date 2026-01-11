@@ -272,7 +272,7 @@ async function handleCancel() {
 }
 
 .action-button.primary {
-  background: #4A90E2;
+  background: #D60000;
   color: white;
 }
 

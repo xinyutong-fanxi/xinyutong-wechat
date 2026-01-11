@@ -78,67 +78,67 @@ const badgeClasses = computed(() => {
   padding: 8rpx 20rpx;
 }
 
-/* Booking statuses */
+/* Booking statuses - Minimalist grayscale with red for errors */
 .status-badge.status-pending {
-  background: #fff3cd;
-  color: #856404;
+  background: rgba(229, 231, 235, 0.8);
+  color: #323232;
 }
 
 .status-badge.status-confirmed {
-  background: #d1ecf1;
-  color: #0c5460;
+  background: rgba(229, 231, 235, 0.8);
+  color: #323232;
 }
 
 .status-badge.status-completed {
-  background: #d4edda;
-  color: #155724;
+  background: rgba(229, 231, 235, 0.8);
+  color: #323232;
 }
 
 .status-badge.status-cancelled {
-  background: #f8d7da;
-  color: #721c24;
+  background: rgba(214, 0, 0, 0.1);
+  color: #D60000;
 }
 
 /* Payment statuses */
 .status-badge.status-unpaid {
-  background: #fff3cd;
-  color: #856404;
+  background: rgba(229, 231, 235, 0.8);
+  color: #323232;
 }
 
 .status-badge.status-paid {
-  background: #d4edda;
-  color: #155724;
+  background: rgba(229, 231, 235, 0.8);
+  color: #323232;
 }
 
 .status-badge.status-failed {
-  background: #f8d7da;
-  color: #721c24;
+  background: rgba(214, 0, 0, 0.1);
+  color: #D60000;
 }
 
 .status-badge.status-refunded {
-  background: #d1ecf1;
-  color: #0c5460;
+  background: rgba(229, 231, 235, 0.8);
+  color: #323232;
 }
 
 /* Teacher statuses */
 .status-badge.status-approved {
-  background: #d4edda;
-  color: #155724;
+  background: rgba(229, 231, 235, 0.8);
+  color: #323232;
 }
 
 .status-badge.status-rejected {
-  background: #f8d7da;
-  color: #721c24;
+  background: rgba(214, 0, 0, 0.1);
+  color: #D60000;
 }
 
 .status-badge.status-suspended {
-  background: #ffeeba;
-  color: #856404;
+  background: rgba(214, 0, 0, 0.1);
+  color: #D60000;
 }
 
 /* Distributor statuses */
 .status-badge.status-none {
-  background: #e2e3e5;
-  color: #6c757d;
+  background: rgba(229, 231, 235, 0.8);
+  color: #323232;
 }
 </style>

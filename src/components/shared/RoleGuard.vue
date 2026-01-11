@@ -67,7 +67,7 @@ onMounted(() => {
 
 .back-button {
   padding: 20rpx 40rpx;
-  background: #4A90E2;
+  background: #D60000;
   color: white;
   border-radius: 8rpx;
   font-size: 28rpx;

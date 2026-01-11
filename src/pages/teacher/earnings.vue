@@ -201,7 +201,7 @@ onMounted(() => {
 }
 
 .tab.active {
-  background: #4A90E2;
+  background: #D60000;
   color: white;
 }
 
@@ -256,7 +256,7 @@ onMounted(() => {
   left: 0;
   right: 0;
   width: 100%;
-  background: #4A90E2;
+  background: #D60000;
   color: white;
   border-radius: 0;
   padding: 30rpx;

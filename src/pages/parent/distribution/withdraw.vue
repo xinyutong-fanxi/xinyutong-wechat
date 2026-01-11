@@ -284,8 +284,8 @@ onMounted(() => {
 
 .quick-amount:active {
   background: #e6f3ff;
-  border-color: #4A90E2;
-  color: #4A90E2;
+  border-color: #D60000;
+  color: #D60000;
 }
 
 .payment-option {
@@ -298,7 +298,7 @@ onMounted(() => {
 }
 
 .payment-option.selected {
-  border-color: #4A90E2;
+  border-color: #D60000;
   background: #e6f3ff;
 }
 
@@ -314,7 +314,7 @@ onMounted(() => {
 
 .check-icon {
   font-size: 32rpx;
-  color: #4A90E2;
+  color: #D60000;
 }
 
 .rules-section {
@@ -341,7 +341,7 @@ onMounted(() => {
 
 .submit-button {
   width: 100%;
-  background: #4A90E2;
+  background: #D60000;
   color: white;
   border-radius: 8rpx;
   padding: 30rpx;

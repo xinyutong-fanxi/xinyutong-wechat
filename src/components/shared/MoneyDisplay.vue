@@ -59,7 +59,7 @@ const classNames = computed(() => {
 }
 
 .color-primary {
-  color: #4A90E2;
+  color: #D60000;
 }
 
 .color-warning {

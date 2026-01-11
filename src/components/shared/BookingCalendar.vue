@@ -236,7 +236,7 @@ watch(() => props.availableSlots, () => {
 
 .nav-btn {
   font-size: 40rpx;
-  color: #4A90E2;
+  color: #D60000;
   font-weight: bold;
   width: 50rpx;
   height: 50rpx;
@@ -285,7 +285,7 @@ watch(() => props.availableSlots, () => {
 
 .calendar-day.today {
   background: #e6f3ff;
-  border: 2rpx solid #4A90E2;
+  border: 2rpx solid #D60000;
 }
 
 .calendar-day.available {
@@ -293,7 +293,7 @@ watch(() => props.availableSlots, () => {
 }
 
 .calendar-day.selected {
-  background: #4A90E2;
+  background: #D60000;
   color: white;
 }
 
@@ -318,7 +318,7 @@ watch(() => props.availableSlots, () => {
   left: 0;
   right: 0;
   background: white;
-  border: 2rpx solid #4A90E2;
+  border: 2rpx solid #D60000;
   border-radius: 12rpx;
   padding: 20rpx;
   z-index: 10;
@@ -350,7 +350,7 @@ watch(() => props.availableSlots, () => {
 }
 
 .time-slot.selected {
-  background: #4A90E2;
+  background: #D60000;
   color: white;
   border-color: #0051d5;
 }

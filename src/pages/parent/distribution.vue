@@ -148,7 +148,7 @@ onMounted(() => {
 
 .apply-button {
   width: 100%;
-  background: #4A90E2;
+  background: #D60000;
   color: white;
   border-radius: 8rpx;
   padding: 25rpx;
@@ -176,7 +176,7 @@ onMounted(() => {
 
 .referral-code {
   font-size: 24rpx;
-  color: #4A90E2;
+  color: #D60000;
   background: #e6f3ff;
   padding: 8rpx 16rpx;
   border-radius: 8rpx;
@@ -219,15 +219,15 @@ onMounted(() => {
 .action-btn {
   width: 100%;
   background: white;
-  color: #4A90E2;
-  border: 2rpx solid #4A90E2;
+  color: #D60000;
+  border: 2rpx solid #D60000;
   border-radius: 8rpx;
   padding: 25rpx;
   font-size: 32rpx;
 }
 
 .action-btn.primary {
-  background: #4A90E2;
+  background: #D60000;
   color: white;
 }
 </style>
