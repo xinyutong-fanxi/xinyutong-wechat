@@ -179,7 +179,7 @@ async function handleApprove() {
 .teacher-audit {
   padding: 20rpx;
   min-height: 100vh;
-  background-color: #F2F2F2;
+  background-color: transparent; /* Inherit paper texture */
 }
 
 .teacher-info-section, .credentials-section {
@@ -224,7 +224,7 @@ async function handleApprove() {
   width: 100%;
   height: 300rpx;
   border-radius: 8rpx;
-  background: #F2F2F2;
+  background: transparent; /* Inherit paper texture */
 }
 
 .actions-section {

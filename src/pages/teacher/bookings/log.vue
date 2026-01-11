@@ -148,7 +148,7 @@ async function submitLog() {
 .submit-log {
   padding: 20rpx;
   min-height: 100vh;
-  background-color: #F2F2F2;
+  background-color: transparent; /* Inherit paper texture */
 }
 
 .booking-info {
@@ -190,7 +190,7 @@ async function submitLog() {
   min-height: 400rpx;
   font-size: 28rpx;
   padding: 20rpx;
-  background: #F2F2F2;
+  background: transparent; /* Inherit paper texture */
   border-radius: 8rpx;
   line-height: 1.6;
 }
@@ -220,7 +220,7 @@ async function submitLog() {
   width: 100%;
   padding: 20rpx;
   font-size: 28rpx;
-  background: #F2F2F2;
+  background: transparent; /* Inherit paper texture */
   border-radius: 8rpx;
   margin-bottom: 20rpx;
 }

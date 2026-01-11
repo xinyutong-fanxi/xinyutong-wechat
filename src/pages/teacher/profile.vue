@@ -219,7 +219,7 @@ onMounted(() => {
 .teacher-profile {
   padding: 20rpx;
   min-height: 100vh;
-  background-color: #F2F2F2;
+  background-color: transparent; /* Inherit paper texture */
 }
 
 .profile-header {
@@ -290,7 +290,7 @@ onMounted(() => {
   width: 100%;
   font-size: 32rpx;
   padding: 20rpx;
-  background: #F2F2F2;
+  background: transparent; /* Inherit paper texture */
   border-radius: 8rpx;
 }
 
@@ -299,7 +299,7 @@ onMounted(() => {
   min-height: 200rpx;
   font-size: 28rpx;
   padding: 20rpx;
-  background: #F2F2F2;
+  background: transparent; /* Inherit paper texture */
   border-radius: 8rpx;
 }
 
@@ -311,7 +311,7 @@ onMounted(() => {
 
 .tag {
   padding: 15rpx 25rpx;
-  background: #F2F2F2;
+  background: transparent; /* Inherit paper texture */
   border: 2rpx solid #ddd;
   border-radius: 8rpx;
   font-size: 26rpx;

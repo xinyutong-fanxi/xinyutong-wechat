@@ -119,7 +119,7 @@ function handlePaymentFail(error) {
   padding: 20rpx;
   padding-bottom: 160rpx;
   min-height: 100vh;
-  background-color: #F2F2F2;
+  background-color: transparent; /* Inherit paper texture */
 }
 
 .order-summary {

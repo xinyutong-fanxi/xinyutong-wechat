@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" preserveAspectRatio="xMidYMid meet">
+  <!-- Chinese Character "智" (Wisdom) - Traditional Calligraphy Style -->
+  <g opacity="0.06">
+    <!-- Using path-based strokes for better rendering control -->
+    <!-- Simplified calligraphy strokes for 智 (zhì) -->
+    
+    <!-- Top radical (知) structure -->
+    <g transform="translate(200, 180)">
+      <!-- Horizontal top strokes -->
+      <path d="M-90 -100 L90 -100" stroke="#323232" stroke-width="10" stroke-linecap="round" opacity="0.7"/>
+      <path d="M-80 -75 L80 -75" stroke="#323232" stroke-width="7" stroke-linecap="round" opacity="0.6"/>
+      
+      <!-- Left vertical (矢) -->
+      <path d="M-60 -100 L-60 60" stroke="#323232" stroke-width="9" stroke-linecap="round" opacity="0.65"/>
+      
+      <!-- Right vertical structure -->
+      <path d="M70 -100 L70 60" stroke="#323232" stroke-width="8" stroke-linecap="round" opacity="0.6"/>
+      
+      <!-- Middle horizontal -->
+      <path d="M-50 -40 L50 -40" stroke="#323232" stroke-width="6" stroke-linecap="round" opacity="0.55"/>
+      
+      <!-- Diagonal strokes (mouth radical) -->
+      <path d="M-40 -60 L-40 30" stroke="#323232" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
+      <path d="M-30 -50 L-30 20" stroke="#323232" stroke-width="5" stroke-linecap="round" opacity="0.45"/>
+    </g>
+    
+    <!-- Bottom radical (日) structure -->
+    <g transform="translate(200, 320)">
+      <!-- Box shape -->
+      <path d="M-70 -30 L70 -30 L70 60 L-70 60 Z" stroke="#323232" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+      <!-- Internal horizontal -->
+      <path d="M-60 5 L60 5" stroke="#323232" stroke-width="5" stroke-linecap="round" opacity="0.5"/>
+      <!-- Internal vertical -->
+      <path d="M0 -30 L0 60" stroke="#323232" stroke-width="5" stroke-linecap="round" opacity="0.45"/>
+    </g>
+  </g>
+</svg>

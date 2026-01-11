@@ -107,7 +107,7 @@ async function handleSubmit() {
 .apply-distributor {
   padding: 20rpx;
   min-height: 100vh;
-  background-color: #F2F2F2;
+  background-color: transparent; /* Inherit paper texture */
 }
 
 .info-section, .rules-section {

@@ -237,7 +237,7 @@ async function handleApprove() {
 .withdrawal-review {
   padding: 20rpx;
   min-height: 100vh;
-  background-color: #F2F2F2;
+  background-color: transparent; /* Inherit paper texture */
 }
 
 .withdrawal-info-section, .commissions-section {
@@ -288,7 +288,7 @@ async function handleApprove() {
   justify-content: space-between;
   align-items: center;
   padding: 20rpx;
-  background: #F2F2F2;
+  background: transparent; /* Inherit paper texture */
   border-radius: 8rpx;
 }
 

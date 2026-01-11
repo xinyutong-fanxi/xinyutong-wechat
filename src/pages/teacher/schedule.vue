@@ -280,7 +280,7 @@ onMounted(() => {
 .schedule-page {
   padding: 20rpx;
   min-height: 100vh;
-  background-color: #F2F2F2;
+  background-color: transparent; /* Inherit paper texture */
 }
 
 .calendar-header {
@@ -342,7 +342,7 @@ onMounted(() => {
   align-items: center;
   justify-content: center;
   padding: 10rpx;
-  background: #F2F2F2;
+  background: transparent; /* Inherit paper texture */
   border-radius: 8rpx;
   position: relative;
 }
@@ -397,7 +397,7 @@ onMounted(() => {
 
 .time-slot {
   padding: 10rpx;
-  background: #F2F2F2;
+  background: transparent; /* Inherit paper texture */
   border-radius: 6rpx;
   text-align: center;
   font-size: 22rpx;
@@ -453,7 +453,7 @@ onMounted(() => {
 }
 
 .legend-color.unavailable {
-  background: #F2F2F2;
+  background: transparent; /* Inherit paper texture */
 }
 
 .save-button {

@@ -135,7 +135,7 @@ onMounted(() => {
 .teachers-page {
   padding: 20rpx;
   min-height: 100vh;
-  background-color: #F2F2F2;
+  background-color: transparent; /* Inherit paper texture */
 }
 
 .search-bar {

@@ -74,7 +74,7 @@ function handleClick() {
   height: 120rpx;
   border-radius: 60rpx;
   flex-shrink: 0;
-  background: #F2F2F2;
+  background: transparent; /* Inherit paper texture */
 }
 
 .teacher-info {

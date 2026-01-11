@@ -136,7 +136,7 @@ async function handleSubmit(e) {
 .create-student {
   padding: 20rpx;
   min-height: 100vh;
-  background-color: #F2F2F2;
+  background-color: transparent; /* Inherit paper texture */
 }
 
 .form-item {

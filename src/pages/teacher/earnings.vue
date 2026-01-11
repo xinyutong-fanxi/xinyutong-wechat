@@ -151,7 +151,7 @@ onMounted(() => {
   padding: 20rpx;
   padding-bottom: 100rpx;
   min-height: 100vh;
-  background-color: #F2F2F2;
+  background-color: transparent; /* Inherit paper texture */
 }
 
 .summary-cards {

@@ -83,7 +83,7 @@ function handleAddNew() {
 }
 
 .student-option {
-  background: #F2F2F2;
+  background: transparent; /* Inherit paper texture */
   border: 2rpx solid #ddd;
   border-radius: 16rpx;
   padding: 30rpx 20rpx;

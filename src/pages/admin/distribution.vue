@@ -156,7 +156,7 @@ onMounted(() => {
 .admin-distribution {
   padding: 20rpx;
   min-height: 100vh;
-  background-color: #F2F2F2;
+  background-color: transparent; /* Inherit paper texture */
 }
 
 .config-section, .stats-section {
@@ -188,7 +188,7 @@ onMounted(() => {
   width: 100%;
   font-size: 32rpx;
   padding: 20rpx;
-  background: #F2F2F2;
+  background: transparent; /* Inherit paper texture */
   border-radius: 8rpx;
 }
 
@@ -213,7 +213,7 @@ onMounted(() => {
 }
 
 .stat-card {
-  background: #F2F2F2;
+  background: transparent; /* Inherit paper texture */
   border-radius: 12rpx;
   padding: 30rpx;
   text-align: center;

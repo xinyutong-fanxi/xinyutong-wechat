@@ -341,7 +341,7 @@ watch(() => props.availableSlots, () => {
 
 .time-slot {
   padding: 12rpx 8rpx;
-  background: #F2F2F2;
+  background: transparent; /* Inherit paper texture */
   border-radius: 8rpx;
   text-align: center;
   font-size: 22rpx;

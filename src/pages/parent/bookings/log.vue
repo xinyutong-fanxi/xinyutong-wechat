@@ -166,7 +166,7 @@ function formatDate(timestamp) {
   padding: 20rpx;
   padding-bottom: 120rpx;
   min-height: 100vh;
-  background-color: #F2F2F2;
+  background-color: transparent; /* Inherit paper texture */
 }
 
 .booking-info {
@@ -205,7 +205,7 @@ function formatDate(timestamp) {
 }
 
 .log-content-box {
-  background: #F2F2F2;
+  background: transparent; /* Inherit paper texture */
   border-radius: 8rpx;
   padding: 30rpx;
   min-height: 200rpx;
@@ -262,7 +262,7 @@ function formatDate(timestamp) {
   min-height: 200rpx;
   font-size: 28rpx;
   padding: 20rpx;
-  background: #F2F2F2;
+  background: transparent; /* Inherit paper texture */
   border-radius: 8rpx;
   line-height: 1.6;
 }

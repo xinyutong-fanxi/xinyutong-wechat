@@ -175,7 +175,7 @@ onMounted(() => {
 .teacher-withdraw {
   padding: 20rpx;
   min-height: 100vh;
-  background-color: #F2F2F2;
+  background-color: transparent; /* Inherit paper texture */
 }
 
 .balance-card {
@@ -251,7 +251,7 @@ onMounted(() => {
 
 .quick-amount {
   padding: 15rpx 30rpx;
-  background: #F2F2F2;
+  background: transparent; /* Inherit paper texture */
   border-radius: 8rpx;
   font-size: 28rpx;
   color: #666;

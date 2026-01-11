@@ -139,8 +139,11 @@ export default {
   min-height: 100vh;
   padding: 24rpx;
   box-sizing: border-box;
-  background: #F2F2F2;
+  /* Inherit paper texture from page */
+  background: transparent;
   transition: background 0.3s ease;
+  position: relative;
+  z-index: 1;
 }
 .header {
   padding: 8rpx 0 16rpx;

@@ -121,7 +121,7 @@ onMounted(() => {
 .distribution-page {
   padding: 20rpx;
   min-height: 100vh;
-  background-color: #F2F2F2;
+  background-color: transparent; /* Inherit paper texture */
 }
 
 .status-card {
@@ -190,7 +190,7 @@ onMounted(() => {
 }
 
 .stat-item {
-  background: #F2F2F2;
+  background: transparent; /* Inherit paper texture */
   border-radius: 12rpx;
   padding: 30rpx;
   text-align: center;
